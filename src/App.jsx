@@ -1,12 +1,17 @@
 import React from "react";
-import Navbar from "./Componants/Navbar.jsx"; // 👈 check spelling: "Components" vs "Componants"
-import { Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Pages/Home";
 
-export default function App() {
-  return (
-    <div>
-      <Navbar />
-      <Outlet />
-    </div>
-  );
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {},
+  ]);
+
+  return <RouterProvider router={router} />;
 }
+
+export default App;
