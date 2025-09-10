@@ -4,8 +4,6 @@ import { faAt, faPhone, faLocationDot, faBraille, faBars, faTimes, faLessThanEqu
 import { Link } from "react-router-dom";
 import CGTIlogo from '../assets/CGTI-Logo.png';
 import CGTIlogo2 from '../assets/CGTIlogo2.png';
-import insta from '../assets/social.png';
-import twitter from '../assets/twitter.png';
 import { faSquareFacebook, faSquareInstagram, faSquareLinkedin, faSquareTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
