@@ -8,7 +8,9 @@ function App() {
       path: "/",
       element: <Home />,
     },
-    {},
+    {
+      
+    },
   ]);
 
   return <RouterProvider router={router} />;
