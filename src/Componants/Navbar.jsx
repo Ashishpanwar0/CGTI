@@ -34,7 +34,7 @@ const Navbar = ({}) => {
           <div className='flex lg:gap-3 lg:ml-auto'>
             <FontAwesomeIcon icon={faSquareFacebook} fade style={{color: "#74C0FC",}} size="xl"/>
             <FontAwesomeIcon icon={faSquareInstagram} fade style={{color: "#74C0FC",}} size="xl"/>
-            <FontAwesomeIcon icon={faSquareTwitter} fade style={{color: "#74C0FC",}} size="xl"/>
+            <FontAwesomeIcon icon={faSquareTwitter} fade style={{color: "#74C0FC",}} size="xl"/> 
             <FontAwesomeIcon icon={faSquareLinkedin} fade style={{color: "#74C0FC",}} size="xl"/>
           </div>
         </div>
