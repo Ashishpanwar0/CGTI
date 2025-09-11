@@ -11,8 +11,8 @@ const Navbar = ({}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <div className='space-y-2 py-3 border-b-1 border-[#F2F5FA] shadow-2xs lg:block hidden'>
-        <div className='flex gap-x-13 lg:ml-12 items-center'>
+      <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden'>
+        <div className='flex gap-x-13 items-center'>
             <div className='flex items-center gap-x-2'>
               <FontAwesomeIcon icon={faAt} fade style={{color: "#74C0FC",}} size="1xl"/>
              <h1 className='text-[#000000]'>cgtirishikesh@gmail.com</h1>
@@ -21,17 +21,17 @@ const Navbar = ({}) => {
               <FontAwesomeIcon icon={faPhone} fade style={{color: "#74C0FC",}} size="1xl"/>
               <h1 className='text-[#000000]'>+91-7500679066, 7455857367</h1>
             </div>
-            <div className='ml-75'>
+            <div className='ml-auto'>
               <h1 className='text-[#000000]'>Open Hours of Institute Mon - Sat: 7.00 am - 7.00 pm</h1>
             </div>
         </div>
 
-        <div className='flex lg:ml-12'>
+        <div className='flex'>
           <div className='flex gap-x-2 items-center'>
             <FontAwesomeIcon icon={faLocationDot} beatFade size="1xl" style={{color: "#74C0FC",}} />
             <h1 className='text-[#000000]'>IDPL and Shyampur</h1>
           </div>
-          <div className='flex lg:w-7 lg:gap-3 lg:ml-235'>
+          <div className='flex lg:gap-3 lg:ml-auto'>
             <FontAwesomeIcon icon={faSquareFacebook} fade style={{color: "#74C0FC",}} size="xl"/>
             <FontAwesomeIcon icon={faSquareInstagram} fade style={{color: "#74C0FC",}} size="xl"/>
             <FontAwesomeIcon icon={faSquareTwitter} fade style={{color: "#74C0FC",}} size="xl"/>
