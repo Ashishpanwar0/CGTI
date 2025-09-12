@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faPhone, faLocationDot, faBraille, faBars, faTimes, } from "@fortawesome/free-solid-svg-icons";
+import { faBraille, faBars, faTimes, } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import CGTIMail from '../assets/CGTIMail.gif';
 import CGTIlocation from '../assets/CGTIlocation.gif';
