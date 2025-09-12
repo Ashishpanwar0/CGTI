@@ -60,9 +60,9 @@ const Navbar = ({}) => {
    </div>  
 
 {/* mobile Menu Start */}
-<div className=' px-4 py-2 lg:shadow-non shadow-2xl'>
+<div className=' px-4 py-2 lg:shadow-non shadow-2xl z-30  relative'>
     <div className='flex items-center justify-between'>
-      <div className='lg:hidden'><img src={CGTIlogo2} alt="" className='w-17'/></div>
+      <div className='lg:hidden'><img src={CGTIlogo} alt="" className='w-80'/></div>
       <div>
          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-2xl text-gray-700">
         {menuOpen ?  <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
