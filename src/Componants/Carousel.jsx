@@ -1,49 +1,77 @@
-import React, {useEffect} from 'react';
-import "flowbite";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 
-const Carousel = ({}) => {
-    useEffect(() => {
-    import("flowbite");
-  }, []);
-    return(
-        <section>
-<div id="default-carousel" className="relative w-full mt-[-16px]" data-carousel="slide">
-    <div className="relative h-56 overflow-hidden md:h-96">
-        <div className="duration-200 ease-in-out" data-carousel-item>
-            <img src="https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-1.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-        </div>
-        <div className="duration-200 ease-in-out" data-carousel-item>
-            <img src="https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-2.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-        </div>
-        <div className="duration-200 ease-in-out" data-carousel-item>
-            <img src="https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-3.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-        </div>
-    </div>
-    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" className="w-3 h-1 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" className="w-3 h-1 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" className="w-3 h-1 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-    </div>
-    <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span className="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span className="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-    
-        </section>
-    )
-}
+const Slider = () => {
+  const images = [
+    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-2.jpg",
+    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-3.jpg",
+    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-1.jpg",
+  ];
+const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(1);
 
-export default Carousel
+  const nextSlide = () => {
+    if (index === images.length - 1) {
+      setDirection(-1);
+      setIndex(index - 1);
+    } else {
+      setDirection(1);
+      setIndex(index + 1);
+    }
+  };
+
+  const prevSlide = () => {
+    if (index === 0) {
+      setDirection(1);
+      setIndex(index + 1);
+    } else {
+      setDirection(-1);
+      setIndex(index - 1);
+    }
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (direction === 1) {
+        if (index === images.length - 1) {
+          setDirection(-1);
+          setIndex(index - 1);
+        } else {
+          setIndex(index + 1);
+        }
+      } else {
+        if (index === 0) {
+          setDirection(1);
+          setIndex(index + 1);
+        } else {
+          setIndex(index - 1);
+        }
+      }
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [index, direction, images.length]);
+
+
+  return (
+    <div className="relative lg:mt-[-16px] lg:w-full w-full mx-auto overflow-hidden shadow-lg">
+      <div
+        className="flex transition-transform duration-900 w-full" style={{ transform: `translateX(-${index * 100}%)` }}
+      >
+        {images.map((src, i) => (
+          <img key={i} src={src} alt={`Slide ${i}`} className="w-full flex-shrink-0 object-cover h-70 sm:h-64 md:h-80 lg:h-[430px] object-center"/>
+        ))}
+      </div>
+      <button
+        onClick={prevSlide} className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
+             <FontAwesomeIcon icon={faAt} fade style={{color: "#74C0FC",}} size="1xl"/>
+      </button>
+
+      <button onClick={nextSlide} className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
+      </button>
+    </div>
+  );
+};
+
+export default Slider;

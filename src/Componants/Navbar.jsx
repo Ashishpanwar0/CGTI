@@ -4,8 +4,10 @@ import { faAt, faPhone, faLocationDot, faBraille, faBars, faTimes, faLessThanEqu
 import { Link } from "react-router-dom";
 import CGTIlogo from '../assets/CGTI-Logo.png';
 import CGTIlogo2 from '../assets/CGTIlogo2.png';
-import { faSquareFacebook, faSquareInstagram, faSquareLinkedin, faSquareTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import CGTIFacbook from '../assets/CGTIFacbook.gif';
+import CGTIInsta from '../assets/CGTIInstragram.gif';
+import CGTILink from '../assets/CGTILink.gif.gif';
+import CGTITwitter from '../assets/CGTITwitter.gif';
 
 const Navbar = ({}) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,10 +34,10 @@ const Navbar = ({}) => {
             <h1 className='text-[#000000]'>IDPL and Shyampur</h1>
           </div>
           <div className='flex lg:gap-3 lg:ml-auto'>
-            <FontAwesomeIcon icon={faSquareFacebook} fade style={{color: "#74C0FC",}} size="xl"/>
-            <FontAwesomeIcon icon={faSquareInstagram} fade style={{color: "#74C0FC",}} size="xl"/>
-            <FontAwesomeIcon icon={faSquareTwitter} fade style={{color: "#74C0FC",}} size="xl"/> 
-            <FontAwesomeIcon icon={faSquareLinkedin} fade style={{color: "#74C0FC",}} size="xl"/>
+           <img src={CGTIFacbook} alt="" className='lg:w-8 h-8'/>
+           <img src={CGTIInsta} alt="" className='lg:w-8 h-8'/>
+           <img src={CGTILink} alt="" className='lg:w-8 h-8'/>
+           <img src={CGTITwitter} alt="" className='lg:w-8 h-8'/>
           </div>
         </div>
       </div>
