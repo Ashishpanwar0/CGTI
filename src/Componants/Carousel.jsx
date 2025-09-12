@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faCircleRight, faCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Slider = () => {
   const images = [
@@ -65,10 +65,11 @@ const [index, setIndex] = useState(0);
       </div>
       <button
         onClick={prevSlide} className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
-             <FontAwesomeIcon icon={faAt} fade style={{color: "#74C0FC",}} size="1xl"/>
+            <FontAwesomeIcon icon={faCircleRight} beatFade size="xl" />
       </button>
 
       <button onClick={nextSlide} className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
+      <FontAwesomeIcon icon={faCircleLeft} beatFade size="xl" />
       </button>
     </div>
   );

@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faPhone, faLocationDot, faBraille, faBars, faTimes, faLessThanEqual, faSquare, } from "@fortawesome/free-solid-svg-icons";
+import { faAt, faPhone, faLocationDot, faBraille, faBars, faTimes, } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import CGTIMail from '../assets/CGTIMail.gif';
+import CGTIlocation from '../assets/CGTIlocation.gif';
+import CGTIPhone from '../assets/CGTIPhone.gif';
 import CGTIlogo from '../assets/CGTI-Logo.png';
 import CGTIlogo2 from '../assets/CGTIlogo2.png';
 import CGTIFacbook from '../assets/CGTIFacbook.gif';
@@ -16,11 +19,11 @@ const Navbar = ({}) => {
       <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden'>
         <div className='flex gap-x-13 items-center'>
             <div className='flex items-center gap-x-2'>
-              <FontAwesomeIcon icon={faAt} fade style={{color: "#74C0FC",}} size="1xl"/>
+             <img src={CGTIMail} alt="" className='lg:w-7'/>
              <h1 className='text-[#000000]'>cgtirishikesh@gmail.com</h1>
             </div>
             <div className='flex items-center gap-x-2'>
-              <FontAwesomeIcon icon={faPhone} fade style={{color: "#74C0FC",}} size="1xl"/>
+             <img src={CGTIPhone} alt="" className='lg:w-7'/>
               <h1 className='text-[#000000]'>+91-7500679066, 7455857367</h1>
             </div>
             <div className='ml-auto'>
@@ -30,7 +33,7 @@ const Navbar = ({}) => {
 
         <div className='flex'>
           <div className='flex gap-x-2 items-center'>
-            <FontAwesomeIcon icon={faLocationDot} beatFade size="1xl" style={{color: "#74C0FC",}} />
+            <img src={CGTIlocation} alt="" className='lg:w-7'/>
             <h1 className='text-[#000000]'>IDPL and Shyampur</h1>
           </div>
           <div className='flex lg:gap-3 lg:ml-auto'>
