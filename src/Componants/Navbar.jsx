@@ -69,7 +69,6 @@ const Navbar = ({}) => {
     </button> 
       </div>
     </div> 
-   
     {
       menuOpen && (
         <div className='space-y-3 mt-4 ml-2'>

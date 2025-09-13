@@ -73,26 +73,26 @@ const [index, setIndex] = useState(0);
         className="flex transition-transform duration-900 w-full" style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <img key={i} src={src} alt={`Slide ${i}`} className="w-full flex-shrink-0 object-cover h-70 sm:h-64 md:h-80 lg:h-[430px] object-center"/>
+          <img key={i} src={src} alt={`Slide ${i}`} className="w-full flex-shrink-0 object-cover h-60 sm:h-64 md:h-80 lg:h-[430px] object-center"/>
         ))}
       </div>
       <button
         onClick={prevSlide} className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
-            <FontAwesomeIcon icon={faCircleRight} beatFade size="xl" />
+            <FontAwesomeIcon icon={faCircleRight} beatFade size="lg:xl" />
       </button>
 
       <button onClick={nextSlide} className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70">
-      <FontAwesomeIcon icon={faCircleLeft} beatFade size="xl" />
+      <FontAwesomeIcon icon={faCircleLeft} beatFade size="lg:xl" />
       </button>
     </div>
    </section>
 
    {/* Home Carousel Card Start */}
-  <section className="flex flex-col gap-y-10 lg:flex-row lg:w-[92%] rounded-sm lg:ml-15 lg:px-2 lg:py-2 bg-white lg:mt-[-20px] shadow-2xl absolute">
+  <section className="relative z-20 flex flex-col gap-y-10 lg:flex-row lg:w-[92%] w-full rounded-sm lg:ml-15 lg:px-2 lg:py-4 bg-white lg:mt-[-20px] mt-5 shadow-sm">
   {features.map((feature, index) => (
     <div key={index} className="text-center lg:w-full ">
-      <img src={feature.img} alt={`${feature.title} illustration`} className="lg:w-48 lg:h-48  object-contain mx-auto"/>
-      <h2 className="mb-2 font-bold">{`${feature.id}. ${feature.title}`}</h2>
+      <img src={feature.img} alt={`${feature.title} illustration`} className="w-48 h-48 lg:w-48 lg:h-48  object-contain mx-auto"/>
+      <h2 className="lg:mb-2 font-bold">{`${feature.id}. ${feature.title}`}</h2>
       <p className="text-2sm text-[black] tracking-2">{feature.desc}</p>
     </div>
   ))}
