@@ -1,7 +1,10 @@
 import React from "react";
 
 function PhotoGallery() {
-  return <div>PhotoGallery</div>;
+  return <div></div>;
 }
 
 export default PhotoGallery;
+
+
+
