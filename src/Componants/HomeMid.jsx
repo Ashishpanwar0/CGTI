@@ -1,11 +1,78 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
 import CGTIHomeMid from '../assets/CGTIHomeMid.png';
 import TextBackGroundColoreImage from '../assets/TextBackGroundColoreImage.jpg';
 
+const Courses =[
+    {
+        id: 1, title: "Advance Diploma in Computer Applications (ADCA)", desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+        ican: <FontAwesomeIcon icon={faGears} beatFade style={{fontSize: "70px",color: "#74C0FC",}}/>,
+        module:[
+             "Basic Fundamental of computer",
+             "Typing (English/Hindi)",
+             "Microsoft Office",
+             "Fundamentals of Accounts",
+             "Accounting Package Tally",
+             "Taxation (GST / TDS / TCS)",
+        ],
+    },
+        {
+        id: 2, title: "Advance Diploma in Computer Applications (ADCA)", desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+        ican: <FontAwesomeIcon icon={faGears} beatFade style={{fontSize: "70px",color: "#74C0FC",}}/>,
+        module:[
+             "Basic Fundamental of computer",
+             "Typing (English/Hindi)",
+             "Microsoft Office",
+             "Fundamentals of Accounts",
+             "Accounting Package Tally",
+             "Taxation (GST / TDS / TCS)",
+        ],
+    },
+        {
+        id: 3, title: "Advance Diploma in Computer Applications (ADCA)", desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+        ican: <FontAwesomeIcon icon={faGears} beatFade style={{fontSize: "70px",color: "#74C0FC",}}/>,
+        module:[
+             "Basic Fundamental of computer",
+             "Typing (English/Hindi)",
+             "Microsoft Office",
+             "Fundamentals of Accounts",
+             "Accounting Package Tally",
+             "Taxation (GST / TDS / TCS)",
+        ],
+    },
+    {
+        id: 3, title: "Advance Diploma in Computer Applications (ADCA)", desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+        ican: <FontAwesomeIcon icon={faGears} beatFade style={{fontSize: "70px",color: "#74C0FC",}}/>,
+        module:[
+             "Basic Fundamental of computer",
+             "Typing (English/Hindi)",
+             "Microsoft Office",
+             "Fundamentals of Accounts",
+             "Accounting Package Tally",
+             "Taxation (GST / TDS / TCS)",
+        ],
+    },
+       {
+        id: 3, title: "Advance Diploma in Computer Applications (ADCA)", desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+        ican: <FontAwesomeIcon icon={faGears} beatFade style={{fontSize: "70px",color: "#74C0FC",}}/>,
+        module:[
+             "Basic Fundamental of computer",
+             "Typing (English/Hindi)",
+             "Microsoft Office",
+             "Fundamentals of Accounts",
+             "Accounting Package Tally",
+             "Taxation (GST / TDS / TCS)",
+        ],
+    },
+]
+
 const HomeMid  = ({}) => {
     return(
-        // Home Slider After
-            <section className='pt-8 shadow-sm'>
+        <>
+            <section className='pt-8 shadow-sm py-6'>
                 {/* first Section Start */}
                 <div className='lg:flex gap-x-40 lg:px-5 px-8 lg:ml-10 mb-8'>
                    <div className=''>
@@ -23,8 +90,49 @@ const HomeMid  = ({}) => {
 
                 <div>
                    <h1 className="lg:text-[150px] text-5xl font-extrabold bg-clip-text text-transparent bg-center bg-cove lg:text-center lg:px-0 px-8" style={{ backgroundImage: `url(${TextBackGroundColoreImage})` }}>Lead the Future</h1>
-                </div>
+                </div>  
             </section>
+
+            <section>
+                <div className='lg:flex bg-[#F2F5FA] lg:h-140 h-120 justify-center lg:px-10 lg:pt-20 pt-10 px-8 space-y-5'>
+                    <h1 className='lg:text-4xl font-extrabold lg:w-full text-3xl'><span className='underline decoration-blue-500'>Courses</span> tailored to your needs</h1>
+                    <p className='lg:w-2/2'>Our computer courses are carefully designed to provide a comprehensive and dynamic learning experience for students of all levels, from beginners to advanced users.</p>
+                </div>
+                
+              {/* Course Card Section Start */}
+<div className="lg:w-full mx-auto px-8 lg:px-18 mt-[-230px] lg:mt-[-380px]">
+  <Swiper
+    modules={[Autoplay]}
+    spaceBetween={30}
+    slidesPerView={1}
+    autoplay={{ delay: 2500, disableOnInteraction: false }}
+    breakpoints={{
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }}
+  >
+    {Courses.map((course) => (
+      <SwiperSlide key={course.id}>
+        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition duration-300 space-y-5">
+            <div className='w-full'>{course.ican}</div>
+          <h1 className="text-[22px] font-bold mb-5">{course.title}</h1>
+          <p className="text-gray-600 text-1xl mb-8">{course.desc}</p>
+          <ul className="space-y-5">
+            {course.module.map((mod, i) => (
+              <li key={i}>
+                <span className="text-teal-500 mr-2">✔</span>
+                {mod}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
+            </section>
+            </>
     );
 };
 
