@@ -12,11 +12,7 @@ const Courses = [
     title: "Advance Diploma in Computer Applications (ADCA)",
     desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
     ican: (
-      <FontAwesomeIcon
-        icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
-      />
+      <FontAwesomeIcon icon={faGears} beatFade style={{ fontSize: "70px", color: "#74C0FC" }}/>
     ),
     module: [
       "Basic Fundamental of computer",
