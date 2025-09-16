@@ -6,7 +6,6 @@ import CGTIMail from '../assets/CGTIMail.gif';
 import CGTIlocation from '../assets/CGTIlocation.gif';
 import CGTIPhone from '../assets/CGTIPhone.gif';
 import CGTIlogo from '../assets/CGTI-Logo.png';
-import CGTIlogo2 from '../assets/CGTIlogo2.png';
 import CGTIFacbook from '../assets/CGTIFacbook.gif';
 import CGTIInsta from '../assets/CGTIInstragram.gif';
 import CGTILink from '../assets/CGTILink.gif.gif';
