@@ -110,41 +110,47 @@ const HomeMid = ({}) => {
     <>
       <section className="pt-8 shadow-sm py-6">
         {/* first Section Start */}
-        <div className="lg:flex gap-x-40 lg:px-5 px-8 lg:ml-10 mb-8">
+        <div className="grid lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8">
           <div className="">
             <img src={CGTIHomeMid} alt="" className="lg:w-[100%]" />
           </div>
-          <div className="lg:w-130">
-            <span
+          <div className="">
+            {/* <span
               className="absolute text-[110px] text-[#E3E7ED] lg:mt-[-110px] lg:ml-10 tracking-[10px] font-extrabold select-none 
                  stroke-text"
             >
               About
-            </span>
-            <h1 className="lg:text-[40px] text-4xl font-bold mb-2 text-[#1F2531] transform-1d lg:mt-0 mt-8">
-              Computer Guru Training{" "}
-              <span className="underline decoration-blue-500">Institute</span> -
+            </span> */}
+            <h1 className="lg:text-[42px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 tracking-[1px]">
+              Computer Guru Training <span className="underline decoration-blue-500">Institute</span> -
               Rishikesh
             </h1>
-            <p className="text-1xl mb-5 text-justify tracking-3 leading-[1.6] text-[#C3C8C7]">
-              Computers have become an inevitable part of human life. Nowadays,
-              we live in a world where Alexa plays music and Siri sets alarms on
-              the phone. We cannot overlook the importance of computers in
-              education with the launch of so many education portals and apps
-              that have made it necessary to use computers in education. We know
-              that the future is going to be digital with computers and smart
-              devices. It will not change under any circumstances. Actually,
-              with time, a lot of things are becoming digital in our daily
-              routine of living. So, the way technology must be progressing,
-              everyone is updated with the new technology.
-            </p>
-            <p className="text-[#1F2531] text-justify tracking-3 leading-[1.6] mb-5">
-              Computer Guru Institute is one of the best training institutes in
-              Rishikesh, which provides new technology and excellent computer
-              training to the students with 100% satisfaction. Computer Guru
-              Training Institute has highly qualified teachers with an updated
-              system and many facilities for our students.
-            </p>
+              <p className="text-1xl mb-5 text-justify tracking-[1px] leading-[1.6] lg:w-[90%] text-[#C3C8C7] ">
+                 Computer Guru Institute is one of the best training institutes in Rishikesh,
+  offering modern technology and excellent computer training to students with
+  100% satisfaction. The institute has highly qualified teachers, updated
+  systems, modern labs, and many facilities for our learners, ensuring proper
+  guidance, practical exposure, and career-oriented knowledge that helps
+  students build a strong foundation for their bright future ahead.
+              </p>
+             <p className="text-[#1F2531] text-justify tracking-[1px] leading-[1.6] lg:w-[90%] mb-5">
+  Our institute not only focuses on computer skills but also on overall
+  personality development, communication, and confidence building. We believe
+  that true education comes with practical exposure, so every student gets hands-on
+  training with real-life projects and assignments.
+</p>
+
+<p className="text-[#1F2531] text-justify tracking-3 tracking-[1px] lg:w-[90%] mb-5">
+  With flexible class timings, affordable fee structure, and career-oriented
+  courses, Computer Guru Training Institute has become the first choice for
+  students in Rishikesh who want to make a strong career in the digital era.
+</p>
+
+<p className="text-[#1F2531] text-justify tracking-[1px] leading-[1.6] lg:w-[90%] mb-8">
+  Our vision is to empower every student with computer knowledge so that they
+  are ready to face future challenges and grab better opportunities in both
+  education and employment.
+</p>
             <button className="border-1 rounded-xl px-6 py-3">
               Explore More
             </button>
