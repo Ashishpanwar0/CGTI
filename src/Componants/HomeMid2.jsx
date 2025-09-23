@@ -2,7 +2,6 @@
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
     import CGTIMid1 from '../assets/CGTIMid2.png';
-    import CGTIMid2 from '../assets/CGTIMid2.1.png';
 
 
     const HomeMid2 = ({}) => {
@@ -15,7 +14,7 @@
                     </div>
                     <div className='space-y-6 text-justify'>
                         <span className='lg:text-4xl font-bold tracking-[2px]'>What we promise for the</span>
-                        <br />
+                        <br/>
                         <span className='lg:text-4xl font-bold'>bright future of the student</span>
                         <p className='mt-5 mb-10 lg:w-[88%] tracking-[1px]'>we are always supportive of empowering our students with the necessary knowledge, skills and opportunities for a bright and successful future.</p>
                         <ul className='space-y-5 lg:w-[90%]'>
