@@ -15,7 +15,7 @@ const Navbar = ({}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden'>
+      <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden tracking-[2px]'>
         <div className='flex gap-x-13 items-center'>
             <div className='flex items-center gap-x-2'>
              <img src={CGTIMail} alt="" className='lg:w-7'/>
@@ -49,7 +49,7 @@ const Navbar = ({}) => {
       <FontAwesomeIcon icon={faBraille} size="2xl" style={{color: "#FFFFFF",}} className='ml-4'/>
     </div>
     <div><img src={CGTIlogo} alt="" className='lg:w-98'/></div>
-    <div className=' space-x-15 lg:ml-30'>
+    <div className=' space-x-15 lg:ml-19 tracking-[2px]'>
     <Link to="/" className='hover:text-blue-500 hover:underline'>Home</Link>
     <Link to="/About" className='hover:text-blue-500 hover:underline'>About</Link>
     <Link to="/Courses" className='hover:text-blue-500 hover:underline'>Courses</Link>
