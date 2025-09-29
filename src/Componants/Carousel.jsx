@@ -13,9 +13,9 @@ const features = [
   { id: "01", title: "100+ Courses", desc: "Explore a variety of new subjects", img: SliderCard3 },
   { id: "02", title: "Lifetime Support", desc: "Lifetime support for upgradation", img: SliderCard2 },
   { id: "03", title: "Experts Instruction", desc: "Certified & experienced instructor", img: SliderCard1 },
-  { id: "03", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
-    { id: "02", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
-      { id: "01", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
+  { id: "04", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
+    { id: "05", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
+      { id: "06", title: "Recommended", desc: "Best reviews from our alumni", img: SliderCard4 },
 ];
 const Slider = () => {
   const images = [

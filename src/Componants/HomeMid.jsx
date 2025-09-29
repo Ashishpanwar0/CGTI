@@ -211,7 +211,7 @@ const HomeMid = ({}) => {
             ))}
           </Swiper>
         </div>
-        <div className="mt-6 text-center">
+        <div className="mt-6 text-center tracking-[2px]">
           <h1 className="mb-6 text-xl">We have all the courses to help you improve your career.</h1>
            <button className="border-1 rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017]">
               Explore More
