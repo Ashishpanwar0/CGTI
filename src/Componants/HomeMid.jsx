@@ -107,8 +107,8 @@ const Courses = [
 
 const HomeMid = ({}) => {
   return (
-    <>
-      <section className="pt-8 shadow-sm py-6">
+<section className="bg-[#F8FAFC] py-8">
+        <section className="pt-8 py-6 ">
         {/* first Section Start */}
         <div className="grid lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8">
           <div className="">
@@ -121,11 +121,11 @@ const HomeMid = ({}) => {
             >
               About
             </span> */}
-            <h1 className="lg:text-[42px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 tracking-[2px]">
+            <h1 className="lg:text-[42px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 tracking-[px]">
               Computer Guru Training <span className="underline decoration-blue-500">Institute</span> -
               Rishikesh
             </h1>
-              <p className="text-1xl mb-5 text-justify tracking-[2px] lg:w-[90%] text-[#C3C8C7] ">
+              <p className="text-1xl mb-5 text-justify tracking-[px] lg:w-[90%] text-[#C3C8C7] ">
                  Computer Guru Institute is one of the best training institutes in Rishikesh,
   offering modern technology and excellent computer training to students with
   100% satisfaction. The institute has highly qualified teachers, updated
@@ -133,20 +133,20 @@ const HomeMid = ({}) => {
   guidance, practical exposure, and career-oriented knowledge that helps
   students build a strong foundation for their bright future ahead.
               </p>
-             <p className="text-[#1F2531] text-justify tracking-[2px] leading-[1.6] lg:w-[90%] mb-5">
+             <p className="text-[#1F2531] text-justify tracking-[px] leading-[1.6] lg:w-[90%] mb-5">
   Our institute not only focuses on computer skills but also on overall
   personality development, communication, and confidence building. We believe
   that true education comes with practical exposure, so every student gets hands-on
   training with real-life projects and assignments.
 </p>
 
-<p className="text-[#1F2531] text-justify tracking-[2px] lg:w-[90%] mb-5">
+<p className="text-[#1F2531] text-justify tracking-[px] lg:w-[90%] mb-5">
   With flexible class timings, affordable fee structure, and career-oriented
   courses, Computer Guru Training Institute has become the first choice for
   students in Rishikesh who want to make a strong career in the digital era.
 </p>
 
-<p className="text-[#1F2531] text-justify tracking-[2px] leading-[1.6] lg:w-[90%] mb-8">
+<p className="text-[#1F2531] text-justify tracking-[px] leading-[1.6] lg:w-[90%] mb-8">
   Our vision is to empower every student with computer knowledge so that they
   are ready to face future challenges and grab better opportunities in both
   education and employment.
@@ -169,11 +169,11 @@ const HomeMid = ({}) => {
 
       <section>
         <div className="lg:flex bg-[#F2F5FA] lg:h-140 h-120 justify-center lg:px-10 lg:pt-20 pt-10 px-8 space-y-5">
-          <h1 className="lg:text-4xl font-extrabold lg:w-full text-3xl tracking-[2px]">
+          <h1 className="lg:text-4xl font-extrabold lg:w-full text-3xl tracking-[px]">
             <span className="underline decoration-blue-500">Courses</span>{" "}
             tailored to your needs
           </h1>
-          <p className="lg:w-2/2 tracking-[2px]">
+          <p className="lg:w-2/2 tracking-[px]">
             Our computer courses are carefully designed to provide a
             comprehensive and dynamic learning experience for students of all
             levels, from beginners to advanced users.
@@ -194,10 +194,10 @@ const HomeMid = ({}) => {
           >
             {Courses.map((course) => (
               <SwiperSlide key={course.id}>
-                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition duration-300 space-y-5">
+                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-xl transition duration-300 space-y-5">
                   <div className="w-full">{course.ican}</div>
-                  <h1 className="text-[22px] font-bold mb-5 tracking-[2px]">{course.title}</h1>
-                  <p className="text-gray-600 text-1xl mb-8 tracking-[2px]">{course.desc}</p>
+                  <h1 className="text-[22px] font-bold mb-5 tracking-[px]">{course.title}</h1>
+                  <p className="text-gray-600 text-1xl mb-8 tracking-[px]">{course.desc}</p>
                   <ul className="space-y-5 tracking-[2px]">
                     {course.module.map((mod, i) => (
                       <li key={i}>
@@ -218,7 +218,7 @@ const HomeMid = ({}) => {
             </button>
         </div>
       </section>
-    </>
+</section>
   );
 };
 

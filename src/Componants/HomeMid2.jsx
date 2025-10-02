@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import CGTIMid1 from "../assets/CGTIMid2.png";
 import CGTIMid2 from "../assets/CGTIMid2.1.png";
 
@@ -13,7 +13,7 @@ const AccordionItem = ({ title, content }) => {
       {/* Accordion Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between items-center w-full p-3 rounded-sm text-left bg-[#F2F5FA] hover:bg-blue-300"
+        className="flex justify-between items-center w-full p-3 rounded-sm text-left bg-[#F2F5FA] hover:bg-blue-300 hover:shadow-xl"
       >
         {title}
         <span className="text-2xl">{isOpen ? "−" : "+"}</span>
@@ -32,14 +32,12 @@ const AccordionItem = ({ title, content }) => {
 
 const HomeMid2 = () => {
   return (
-    <section className="pt-15 bg-[#FFFFFF]">
+    <section className="pt-15 bg-[#F8FAFC]">
       {/* First Section Start */}
       <div className="grid lg:grid-cols-2 w-full px-8 lg:gap-x-4">
         <div className="flex justify-center mb-8 lg:mb-0">
-          <img
-            src={CGTIMid1}
-            alt="CGTI Image"
-            className="w-full max-w-md lg:max-w-full rounded-xl lg:mt-4"
+          <img src={CGTIMid1} alt="CGTI Image"
+          className="w-full max-w-md lg:max-w-full rounded-xl lg:mt-4"
           />
         </div>
         <div className="space-y-6 text-justify">
@@ -57,11 +55,7 @@ const HomeMid2 = () => {
           </p>
           <ul className="space-y-5 lg:w-[90%]">
             <li className="flex tracking-[2px] items-center">
-              <FontAwesomeIcon
-                icon={faCircleCheck}
-                size="xl"
-                style={{ color: "#74C0FC" }}
-              />
+              <FontAwesomeIcon icon={faCheck} size="xl" style={{ color: "#74C0FC" }}/>
               <span className="ml-4">
                 <strong>Quality Education:</strong> We provide high-quality
                 education with a focus on the latest curriculum and expert
@@ -69,11 +63,7 @@ const HomeMid2 = () => {
               </span>
             </li>
             <li className="flex tracking-[2px] items-center">
-              <FontAwesomeIcon
-                icon={faCircleCheck}
-                size="xl"
-                style={{ color: "#74C0FC" }}
-              />
+               <FontAwesomeIcon icon={faCheck} size="xl" style={{ color: "#74C0FC" }}/>
               <span className="ml-4">
                 <strong>Industry Relevance:</strong> Our courses are designed to
                 meet the demands of the ever-evolving technology industry,
@@ -81,11 +71,7 @@ const HomeMid2 = () => {
               </span>
             </li>
             <li className="flex tracking-[2px] items-center">
-              <FontAwesomeIcon
-                icon={faCircleCheck}
-                size="xl"
-                style={{ color: "#74C0FC" }}
-              />
+               <FontAwesomeIcon icon={faCheck} size="xl" style={{ color: "#74C0FC" }}/>
               <span className="ml-4">
                 <strong>Flexibility:</strong> With flexible scheduling options
                 including 1 Year Diploma, 6 Months Certificate Course, Short
@@ -155,16 +141,16 @@ const HomeMid2 = () => {
           />
         </div>
         {/* left side start */}
-        <div className="lg:w-[90%] shadow-2xl px-8 py-8 lg:mt-[-20px]">
+        <div className="lg:w-[90%] shadow-xl px-8 py-8 lg:mt-[-20px] relative z-20 rounded-sm hover:shadow-2xl">
           <h1 className="text-5xl font-bold pt-6 mb-5">Book Free Demo Class!</h1>
           <p className="mb-5">Thank you for reaching out to UtechSoftware! Please fill the form right. Our team will contact you shortly.</p>
           <form action="" className="space-y-10">
-            <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm"/>
-             <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm"/>
-              <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm"/>
-               <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm"/>
-                <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm"/>
-                <textarea name="" id="" placeholder="Message *" className="bg-[#E8EDF6] px-2 py-3 w-full h-50"></textarea>
+            <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"/>
+             <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"/>
+              <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"/>
+               <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"/>
+                <input type="text" placeholder="Name *" className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"/>
+                <textarea name="" id="" placeholder="Message *" className="bg-[#E8EDF6] px-2 py-3 w-full h-50 hover:shadow-xl"></textarea>
 
                 <button className="border rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
             Submit Form
