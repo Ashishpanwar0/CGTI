@@ -16,8 +16,8 @@ const Home = ({}) => {
       <HomeMid2/>
       <Features/>
       <Team/>
-      {/* <Testimonials/> */}
-      {/* <PhotoGallery/> */}
+      <Testimonials/>
+      <PhotoGallery/>
     </>
   );
 };

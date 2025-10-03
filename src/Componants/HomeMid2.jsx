@@ -4,13 +4,11 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import CGTIMid1 from "../assets/CGTIMid2.png";
 import CGTIMid2 from "../assets/CGTIMid2.1.png";
 
-// Accordion Item Component
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="space-y-5 lg:w-[98%]">
-      {/* Accordion Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex justify-between items-center w-full p-3 rounded-sm text-left bg-[#F2F5FA] hover:bg-blue-300 hover:shadow-xl"
@@ -18,7 +16,6 @@ const AccordionItem = ({ title, content }) => {
         {title}
         <span className="text-2xl">{isOpen ? "−" : "+"}</span>
       </button>
-      {/* Accordion Content */}
       <div
         className={`transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "max-h-40 p-4" : "max-h-0"
