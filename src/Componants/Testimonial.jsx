@@ -14,53 +14,45 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Priya Sharma",
+    name: "Ankit Negi",
     course: "UI/UX Design",
     photo: "/assets/student2.png",
     text: "The faculty here are really helpful and knowledgeable. I learned not just design but also how to work in real-life projects. Best place to learn modern tech skills.",
   },
   {
     id: 3,
-    name: "Rahul Verma",
+    name: "Priyanshu",
     course: "Backend Engineering",
     photo: "/assets/student3.png",
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
   },
-    {
+  {
     id: 4,
-    name: "Rahul Verma",
+    name: "Aditya",
     course: "Backend Engineering",
     photo: "/assets/student3.png",
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
   },
-    {
+  {
     id: 5,
-    name: "Rahul Verma",
+    name: "Jiya Semwal",
     course: "Backend Engineering",
     photo: "/assets/student3.png",
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
   },
-    {
-    id: 6,
-    name: "Rahul Verma",
-    course: "Backend Engineering",
-    photo: "/assets/student3.png",
-    text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
-  },
-
 ];
 
 const Testimonials = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="">
+    <section className="bg-[#F8FAFC] py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
+        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
           What Our Students Say
-        </h2> */}
+        </h2>
 
-        {/* Swiper Slider */}
+        {/* Swiper Testimonials */}
         <Swiper
           slidesPerView={1}
           spaceBetween={25}
@@ -87,9 +79,7 @@ const Testimonials = () => {
                   {t.name}
                 </h3>
                 <p className="text-sm text-gray-500">{t.course}</p>
-                <p className="mt-4 text-gray-600 line-clamp-3">
-                  "{t.text}"
-                </p>
+                <p className="mt-4 text-gray-600 line-clamp-3">"{t.text}"</p>
                 <span className="text-blue-500 mt-3 inline-block text-sm">
                   Read More
                 </span>
@@ -97,9 +87,43 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Social Media Embed Section */}
+        <div className="flex mt-19">
+          {/* Facebook Embed */}
+          <div className="w-full">
+            <div className="w-full">
+              <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputergurutraininginstitute&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="100%"
+                height="700"
+                style={{ border: "none", overflow: "hidden" }}
+                scrolling="no"
+                frameBorder="0"
+                allowFullScreen={true}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+          </div>
+
+          {/* Instagram Embed */}
+          <div className="w-full">
+            <iframe
+              src="https://www.instagram.com/cgtirishikesh/embed"
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency={true}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title="Instagram Post"
+              
+            ></iframe>
+          </div>
+        </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal for Read More */}
       {selected && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl shadow-xl p-8 max-w-lg w-full relative">

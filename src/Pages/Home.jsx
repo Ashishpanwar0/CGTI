@@ -17,7 +17,7 @@ const Home = ({}) => {
       <Features/>
       <Team/>
       <Testimonials/>
-      <PhotoGallery/>
+      {/* <PhotoGallery/> */}
     </>
   );
 };
