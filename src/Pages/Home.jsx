@@ -7,6 +7,8 @@ import Features from "../Componants/Features";
 import Team from "../Componants/Team";
 import Testimonials from "../Componants/Testimonial";
 import PhotoGallery from "../Componants/PhotoGallary";
+import Footer from "../Componants/Footer";
+
 const Home = ({}) => {
   return (
     <>
@@ -17,6 +19,7 @@ const Home = ({}) => {
       <Features/>
       <Team/>
       <Testimonials/>
+      <Footer/>
       {/* <PhotoGallery/> */}
     </>
   );

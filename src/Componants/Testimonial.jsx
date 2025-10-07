@@ -46,7 +46,7 @@ const Testimonials = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="bg-[#F8FAFC] py-20">
+    <section className="bg-[#F8FAFC] py-10">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
           What Our Students Say
@@ -89,14 +89,14 @@ const Testimonials = () => {
         </Swiper>
 
         {/* Social Media Embed Section */}
-        <div className="flex mt-19">
+        <div className="lg:flex space-y-10 mt-19">
           {/* Facebook Embed */}
           <div className="w-full">
             <div className="w-full">
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputergurutraininginstitute&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                 width="100%"
-                height="700"
+                height="500"
                 style={{ border: "none", overflow: "hidden" }}
                 scrolling="no"
                 frameBorder="0"
@@ -110,8 +110,9 @@ const Testimonials = () => {
           <div className="w-full">
             <iframe
               src="https://www.instagram.com/cgtirishikesh/embed"
+              lg:width="90%"
               width="100%"
-              height="600"
+              height="500"
               frameBorder="0"
               scrolling="no"
               allowTransparency={true}
