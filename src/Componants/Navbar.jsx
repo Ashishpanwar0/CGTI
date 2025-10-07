@@ -51,9 +51,9 @@ const Navbar = ({}) => {
     <div><img src={CGTIlogo} alt="" className='lg:w-98'/></div>
     <div className=' space-x-15 lg:ml-19 tracking-[2px]'>
     <Link to="/" className='hover:text-blue-500 hover:underline'>Home</Link>
-    <Link to="/About" className='hover:text-blue-500 hover:underline'>About</Link>
+    <Link to="/AboutUs" className='hover:text-blue-500 hover:underline'>About</Link>
     <Link to="/Courses" className='hover:text-blue-500 hover:underline'>Courses</Link>
-    <Link to="/Photo-Gallery" className='hover:text-blue-500 hover:underlinn'>Photo Gallary</Link>
+    <Link to="/PhotoGallery" className='hover:text-blue-500 hover:underlinn'>Photo Gallary</Link>
     <Link to="/ContactUs" className='hover:text-blue-500 hover:underline'>Contact Us</Link>
     </div>
    </div>  
@@ -72,9 +72,9 @@ const Navbar = ({}) => {
       menuOpen && (
         <div className='space-y-3 mt-4 ml-2'>
           <Link to="/" className="block hover:text-blue-500">Home</Link>
-          <Link to="/About" className="block hover:text-blue-500">About</Link>
+          <Link to="/AboutUs" className="block hover:text-blue-500">About</Link>
           <Link to="/Courses" className="block hover:text-blue-500">Courses</Link>
-          <Link to="/Photo-Gallery" className="block hover:text-blue-500">Photo Gallery</Link>
+          <Link to="/PhotoGallery" className="block hover:text-blue-500">Photo Gallery</Link>
           <Link to="/ContactUs" className="block hover:text-blue-500">Contact Us</Link>
         </div>
       )}
