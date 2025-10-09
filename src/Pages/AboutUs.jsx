@@ -1,7 +1,6 @@
 import React from "react";
 import CGTISlider1 from '../assets/CGTIHomeMid.png';
 import SecondHeader from '../Componants/SecondHeader';
-import PhotoGallery from "./PhotoGallery";
 import Footer from "../Componants/Footer";
 import Navbar from "../Componants/Navbar";
 
