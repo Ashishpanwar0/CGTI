@@ -1,13 +1,17 @@
-import react from 'react';
+import React from "react";
 
-const SecondHeader =({bgImage, title, subtitle}) => {
-        return(
-        <header className='h-130 bg-cover bg-center opacity-70 ' style={{backgroundImage:  `url(${bgImage})`}}>
-            <h1 className='text-5xl pt-50 ml-20 font-extrabold text-[#FFFFFF]'>{title}</h1>
-            <a href="/" className='text-xl pt-50 ml-20 font-extrabold text-[black]'>{subtitle}</a>
-        </header>
+const SecondHeader = ({ bgImage, title, subtitle }) => {
+  return (
+    <section
+      className="h-64 md:h-120 bg-cover bg-center flex flex-col justify-center pl-10 md:pl-20 text-white relative lg:mt-[-16px] opacity-85"
+      style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="absolute inset-0 bg-black/40"></div>
+      <h1 className="text-5xl md:text-7xl font-extrabold relative z-10 tracking-[2px]">{title}</h1>
+      <p className="text-lg md:text-xl font-medium relative z-10 mt-2 tracking-[2px]">
+        <a href="/" className="text-gray-200">{subtitle}</a>
+      </p>
+    </section>
+  );
+};
 
-
-    )
-    }
-export default SecondHeader
+export default SecondHeader;
