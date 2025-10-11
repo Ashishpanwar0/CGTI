@@ -7,7 +7,7 @@ const SecondHeader = ({ bgImage, title, subtitle }) => {
       style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="absolute inset-0 bg-black/40"></div>
       <h1 className="text-5xl md:text-7xl font-extrabold relative z-10 tracking-[2px]">{title}</h1>
-      <p className="text-lg md:text-xl font-medium relative z-10 mt-2 tracking-[2px]">
+      <p className="text-lg md:text-2xl font-medium relative z-10 mt-2 tracking-[2px] lg:ml-2">
         <a href="/" className="text-gray-200">{subtitle}</a>
       </p>
     </section>

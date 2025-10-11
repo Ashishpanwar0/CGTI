@@ -6,7 +6,6 @@ import HomeMid2 from "../Componants/HomeMid2";
 import Features from "../Componants/Features";
 import Team from "../Componants/Team";
 import Testimonials from "../Componants/Testimonial";
-import PhotoGallery from "../Componants/PhotoGallary";
 import Footer from "../Componants/Footer";
 
 const Home = ({}) => {
@@ -20,7 +19,6 @@ const Home = ({}) => {
       <Team/>
       <Testimonials/>
       <Footer/>
-      {/* <PhotoGallery/> */}
     </>
   );
 };
