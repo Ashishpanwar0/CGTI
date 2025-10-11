@@ -10,16 +10,15 @@ const AboutUs = () => {
     <>
       <Navbar />
       <SecondHeader bgImage={CGTIAbout} title="About Us" subtitle="Home • About Us"/>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:px-20 lg:py-20 px-6 py-10 items-center gap-y-8">
-        <div className=" items-center text-center">
-          <img src={CGTIlogo} alt="CGTI Logo" className="w-64 md:w-70 mb-5 mx-auto md:mx-40"/>
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:px-29 lg:py-20 px-6 py-10 items-center gap-y-8">
+        <div className="">
+          <img src={CGTIlogo} alt="CGTI Logo" className="w-64 md:w-70 mb-5 mx-auto md:mx-10"/>
           <h3 className="text-xl font-bold">
             COMPUTER GURU TRAINING INSTITUTE
           </h3>
         </div>
 
-        <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+        <div className="space-y-4 text-gray-700 leading-relaxed text-justify lg:ml-[-40px]">
           <p className="font-semibold">
             Computers have become an inevitable part of human life. Nowadays, we
             live in a world where Alexa plays music and Siri sets alarms on the
