@@ -13,23 +13,11 @@ function ContactUs() {
   return (
     <>
       <Navbar />
-      <SecondHeader
-        bgImage={CGTIContact}
-        title="Contact Us"
-        subtitle="Home . Contact Us"
+      <SecondHeader  bgImage={CGTIContact} title="Contact Us" subtitle="Home . Contact Us"
       />
-
-      {/* ======= Google Map Section ======= */}
       <div className="w-full h-[450px] lg:h-[550px] mt-0">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.4252132153156!2d78.26272599356918!3d30.085775079023144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093f2d1f679cf3%3A0x9ad4907d5c7e26b!2z4KSV4KSC4KSq4KWN4KSv4KWC4KSf4KSwIOCkl-ClgeCksOClgSDgpJ_gpY3gpLDgpYfgpKjgpL_gpILgpJcg4KSH4KSC4KS44KWN4KSf4KS_4KSf4KWN4KSv4KWC4KSf!5e0!3m2!1shi!2sin!4v1760195704749!5m2!1shi!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Computer Guru Training Institute Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.4252132153156!2d78.26272599356918!3d30.085775079023144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093f2d1f679cf3%3A0x9ad4907d5c7e26b!2z4KSV4KSC4KSq4KWN4KSv4KWC4KSf4KSwIOCkl-ClgeCksOClgSDgpJ_gpY3gpLDgpYfgpKjgpL_gpILgpJcg4KSH4KSC4KS44KWN4KSf4KS_4KSf4KWN4KSv4KWC4KSf!5e0!3m2!1shi!2sin!4v1760195704749!5m2!1shi!2sin" width="100%" height="100%" style={{ border: 0 }}  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Computer Guru Training Institute Location"
         ></iframe>
       </div>
 
