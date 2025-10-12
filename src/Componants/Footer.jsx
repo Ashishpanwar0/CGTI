@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CGTIlogo from '../assets/CGTIlogo.png';
+import CGTIFooter from "../assets/FooterPhoto.jpeg";
 import {
   faPhone,
   faEnvelope,
@@ -125,9 +126,9 @@ const Footer = () => {
           </div>
           <div className="flex items-start gap-3">
             <img
-              src="/assets/news2.jpg"
+              src={CGTIFooter}
               alt="News"
-              className="w-14 h-14 rounded-lg object-cover"
+              className="w-18 h-18 rounded-lg object-cover"
             />
             <div>
               <p className="font-medium text-white text-1xl">यमकेश्वर ब्लॉक</p>
