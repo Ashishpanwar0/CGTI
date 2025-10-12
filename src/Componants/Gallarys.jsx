@@ -60,8 +60,7 @@ const Gallery = () => {
             <div
               key={photo.id}
               className="relative cursor-pointer overflow-hidden rounded-xl shadow-lg w-full max-w-xs"
-              onClick={() => setSelected(photo)}
-            >
+              onClick={() => setSelected(photo)}>
               <img
                 src={photo.src}
                 alt={photo.alt}

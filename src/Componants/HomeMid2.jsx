@@ -199,7 +199,7 @@ const HomeMid2 = () => {
             ></textarea>
 
             <button className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
-              Submit Form
+              Book Demo
             </button>
           </form>
         </div>

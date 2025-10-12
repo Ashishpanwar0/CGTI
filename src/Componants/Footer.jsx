@@ -136,6 +136,8 @@ const Footer = () => {
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} Computer Guru Training Institute — All
         Rights Reserved.
+        <br />
+        {/* <span className="">Devloper By Ashish Panwar</span> */}
       </div>
     </footer>
   );

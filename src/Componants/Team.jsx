@@ -74,7 +74,7 @@ const Team = () => {
   return (
     <>
       {/* Team Section */}
-      <section className="bg-[#F8FAFC] py-20">
+      <section className="bg-[#F8FAFC] py-8">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="lg:text-5xl text-4xl font-extrabold text-gray-800 mb-10 text-center Heading-text">
             Our Expert <span className="text-[#155DFC] underline">Team Member</span> Will Help to Progress

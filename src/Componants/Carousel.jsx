@@ -8,6 +8,9 @@ import SliderCard2 from "../assets/Home-Slider-Card2.svg";
 import SliderCard3 from "../assets/Home-Slider-Card3.svg";
 import SliderCard4 from "../assets/Home-Slider-Card4.svg";
 
+import CGTIBanner1 from "../assets/CGTI-bannerSlider-1.jpg";
+import CGTIBanner2 from "../assets/CGTI-bannerSlider-2.jpg";
+import CGTIBanner3 from "../assets/CGTI-bannerSlider-3.jpg";
 const features = [
   {
     id: "01",
@@ -48,9 +51,12 @@ const features = [
 ];
 const Slider = () => {
   const images = [
-    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-2.jpg",
-    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-3.jpg",
-    "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-1.jpg",
+    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-2.jpg",
+    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-3.jpg",
+    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-1.jpg",
+    { id: 1, img: CGTIBanner1, alt: "CGTISlider1" },
+    { id: 2, img: CGTIBanner2, alt: "CGTISlider2" },
+    { id: 3, img: CGTIBanner3, alt: "CGTISlider3" },
   ];
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -65,7 +71,7 @@ const Slider = () => {
     }
   };
 
-  const prevSlide = () => {
+ const prevSlide = () => {
     if (index === 0) {
       setDirection(1);
       setIndex(index + 1);
@@ -92,38 +98,46 @@ const Slider = () => {
           setIndex(index - 1);
         }
       }
-    }, 3000);
+    }, 4000); // every 4 sec
 
     return () => clearInterval(timer);
   }, [index, direction, images.length]);
 
   return (
     <section className="bg-[#F7FAFF]">
-      <section>
-        <div className="relative lg:mt-[-16px] lg:w-full w-full mx-auto overflow-hidden shadow-lg">
-          <div
-            className="flex transition-transform duration-900 w-full"
-            style={{ transform: `translateX(-${index * 100}%)` }}
-          >
-            {images.map((src, i) => (
-              <img key={i} src={src} alt={`Slide ${i}`} className="w-full flex-shrink-0 object-cover h-60 sm:h-64 md:h-80 lg:h-[430px] object-center"
-              />
-            ))}
-          </div>
-          <button onClick={prevSlide} className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
-          >
-            <FontAwesomeIcon icon={faChevronLeft} size="2x" className="text-white hover:text-gray-900 transition" />
-          </button>
-
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
-          >
-            <FontAwesomeIcon icon={faChevronRight} size="2x" className="text-white hover:text-gray-900 transition" />
-
-          </button>
+     <section className="bg-[#F7FAFF]">
+      <div className="relative lg:mt-[-16px] w-full mx-auto overflow-hidden shadow-lg">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
+          {images.map((image) => (
+            <img
+              key={image.id}
+              src={image.img}
+              alt={image.alt}
+              className="w-full flex-shrink-0 object-cover h-60 sm:h-72 md:h-96 lg:h-[500px]"
+            />
+          ))}
         </div>
-      </section>
+
+        {/* Left button */}
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition"
+        >
+          <FontAwesomeIcon icon={faChevronLeft} size="xl" />
+        </button>
+
+        {/* Right button */}
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition"
+        >
+          <FontAwesomeIcon icon={faChevronRight} size="xl" />
+        </button>
+      </div>
+    </section>
 
       {/* Home Carousel Card Start */}
       <section className="relative z-20 flex lg:w-[92%] w-full rounded-sm lg:ml-15 lg:px-2 lg:py-4 bg-white lg:mt-[-20px] shadow-sm py-3">
