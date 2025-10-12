@@ -48,8 +48,8 @@ const Testimonials = () => {
   return (
     <section className="bg-[#F8FAFC] py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
-          What Our Students Say
+        <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-12">
+          What Our <span className="text-[#155DFC] underline">Students</span> Say
         </h2>
 
         {/* Swiper Testimonials */}
@@ -75,12 +75,12 @@ const Testimonials = () => {
                   alt={t.name}
                   className="w-20 h-20 mx-auto rounded-full object-cover border-4 border-blue-100"
                 />
-                <h3 className="mt-4 text-lg font-semibold text-gray-800">
+                <h3 className="mt-4 text-lg font-semibold text-gray-800 Heading-text">
                   {t.name}
                 </h3>
-                <p className="text-sm text-gray-500">{t.course}</p>
-                <p className="mt-4 text-gray-600 line-clamp-3">"{t.text}"</p>
-                <span className="text-blue-500 mt-3 inline-block text-sm">
+                <p className="text-sm text-gray-500 Body-text">{t.course}</p>
+                <p className="mt-4 text-gray-600 line-clamp-3 Body-text">"{t.text}"</p>
+                <span className="text-blue-500 mt-3 inline-block text-sm tracking-[1px]">
                   Read More
                 </span>
               </div>
@@ -118,7 +118,6 @@ const Testimonials = () => {
               allowTransparency={true}
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               title="Instagram Post"
-              
             ></iframe>
           </div>
         </div>

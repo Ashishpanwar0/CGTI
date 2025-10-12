@@ -15,7 +15,7 @@ const Navbar = ({}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden tracking-[2px]'>
+      <div className='space-y-2 px-12 py-3 border-b-1 lg:w-[100%] border-[#F2F5FA] shadow-2xs lg:block hidden Nav-text'>
         <div className='flex gap-x-13 items-center'>
             <div className='flex items-center gap-x-2'>
              <img src={CGTIMail} alt="" className='lg:w-7'/>
@@ -49,11 +49,11 @@ const Navbar = ({}) => {
       <FontAwesomeIcon icon={faBraille} size="2xl" style={{color: "#FFFFFF",}} className='ml-4'/>
     </div>
     <div><img src={CGTIlogo} alt="" className='lg:w-98'/></div>
-    <div className=' space-x-15 lg:ml-19 tracking-[2px]'>
+    <div className=' space-x-15 lg:ml-19 Nav-text'>
     <Link to="/" className='hover:text-blue-500 hover:underline'>Home</Link>
     <Link to="/AboutUs" className='hover:text-blue-500 hover:underline'>About</Link>
     <Link to="/Courses" className='hover:text-blue-500 hover:underline'>Courses</Link>
-    <Link to="/PhotoGallery" className='hover:text-blue-500 hover:underlinn'>Photo Gallary</Link>
+    <Link to="/PhotoGallery" className='hover:text-blue-500 hover:underline'>Photo Gallary</Link>
     <Link to="/ContactUs" className='hover:text-blue-500 hover:underline'>Contact Us</Link>
     </div>
    </div>  
@@ -70,7 +70,7 @@ const Navbar = ({}) => {
     </div> 
     {
       menuOpen && (
-        <div className='space-y-3 mt-4 ml-2'>
+        <div className='space-y-3 mt-4 ml-2 Nav-text'>
           <Link to="/" className="block hover:text-blue-500">Home</Link>
           <Link to="/AboutUs" className="block hover:text-blue-500">About</Link>
           <Link to="/Courses" className="block hover:text-blue-500">Courses</Link>

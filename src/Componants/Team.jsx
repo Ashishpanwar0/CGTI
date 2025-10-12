@@ -76,10 +76,10 @@ const Team = () => {
       {/* Team Section */}
       <section className="bg-[#F8FAFC] py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-10 text-center">
+          <h1 className="lg:text-5xl text-4xl font-extrabold text-gray-800 mb-10 text-center Heading-text">
             Our Expert <span className="text-[#155DFC] underline">Team Member</span> Will Help to Progress
           </h1>
-          <p className="mb-10 text-center max-w-3xl mx-auto">
+          <p className="mb-10 text-center max-w-3xl mx-auto Body-text">
             Our team is here to provide the support and expertise you need. With
             their unwavering commitment to your growth, you can confidently stride
             forward on your educational and career path, knowing that you have a
@@ -129,7 +129,7 @@ const Team = () => {
       {/* Featured Courses Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-10">
+          <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-10 Heading-text">
             Featured Courses for your <span className="text-[#155DFC] underline">Success</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -141,8 +141,8 @@ const Team = () => {
                 <span className="absolute bottom-4 right-4 text-6xl font-extrabold opacity-10">
                   {index + 1 < 10 ? `0${index + 1}` : index + 1}
                 </span>
-                <h3 className="text-lg font-bold mb-3">{course.title}</h3>
-                <p className="text-1xl leading-relaxed">{course.desc}</p>
+                <h3 className="text-lg font-bold mb-3 Heading-text">{course.title}</h3>
+                <p className="text-1xl leading-relaxed Body-text">{course.desc}</p>
               </div>
             ))}
           </div>

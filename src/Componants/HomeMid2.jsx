@@ -31,7 +31,7 @@ const HomeMid2 = () => {
   return (
     <section className="pt-15 bg-[#F8FAFC]">
       {/* First Section Start */}
-      <div className="grid lg:grid-cols-2 w-full px-8 lg:gap-x-4">
+      <div className="grid lg:grid-cols-2 w-full px-6 lg:gap-x-4">
         <div className="flex justify-center mb-8 lg:mb-0">
           <img
             src={CGTIMid1}
@@ -39,51 +39,51 @@ const HomeMid2 = () => {
             className="w-full max-w-md lg:max-w-full rounded-xl lg:mt-4"
           />
         </div>
-        <div className="space-y-6 text-justify">
-          <span className="lg:text-4xl font-bold tracking-[2px]">
+        <div className="space-y-6 text-justify lg:tracking-[1px]">
+          <span className="lg:text-5xl text-4xl font-bold Heading-text">
             What we promise for the
           </span>
           <br />
-          <span className="lg:text-4xl font-bold">
+          <span className="lg:text-5xl text-4xl font-bold Heading-text">
             bright future of the <span className="text-[#155DFC] underline">student</span>
           </span>
-          <p className="mt-5 mb-10 lg:w-[88%] tracking-[1px]">
+          <p className="mt-5 mb-10 lg:w-[88%] Body-text">
             we are always supportive of empowering our students with the
             necessary knowledge, skills and opportunities for a bright and
             successful future.
           </p>
           <ul className="space-y-5 lg:w-[90%]">
-            <li className="flex tracking-[2px] items-center">
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheck}
                 size="xl"
                 style={{ color: "#74C0FC" }}
               />
-              <span className="ml-4">
+              <span className="ml-4 Body-text">
                 <strong>Quality Education:</strong> We provide high-quality
                 education with a focus on the latest curriculum and expert
                 instructors dedicated to your success.
               </span>
             </li>
-            <li className="flex tracking-[2px] items-center">
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheck}
                 size="xl"
                 style={{ color: "#74C0FC" }}
               />
-              <span className="ml-4">
+              <span className="ml-4 Body-text">
                 <strong>Industry Relevance:</strong> Our courses are designed to
                 meet the demands of the ever-evolving technology industry,
                 ensuring that you are well prepared for real-world challenges.
               </span>
             </li>
-            <li className="flex tracking-[2px] items-center">
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheck}
                 size="xl"
                 style={{ color: "#74C0FC" }}
               />
-              <span className="ml-4">
+              <span className="ml-4 Body-text">
                 <strong>Flexibility:</strong> With flexible scheduling options
                 including 1 Year Diploma, 6 Months Certificate Course, Short
                 Term and Professional Course, we meet your unique needs and
@@ -95,12 +95,12 @@ const HomeMid2 = () => {
       </div>
 
       {/* Second Section Start */}
-      <div className="grid lg:grid-cols-2 w-full px-5 mt-10">
+      <div className="grid lg:grid-cols-2 w-full px-6 mt-10 lg:tracking-[1px]">
         <div className="space-y-6 text-justify lg:mt-20 lg:ml-10">
-          <span className="lg:text-4xl font-bold tracking-[2px]">
+          <span className="lg:text-5xl text-4xl font-bold Heading-text">
             What <span className="text-[#155DFC] underline">We</span> do ?
           </span>
-          <p className="mt-5 mb-10 lg:w-[88%] tracking-[1px]">
+          <p className="mt-5 mb-10 lg:w-[88%] Body-text">
             We believe that our growth as a training institute goes hand in hand
             with the growth and success of our students. Everyone in the CGTI
             family has a responsibility to collaboratively influence the
@@ -110,7 +110,7 @@ const HomeMid2 = () => {
             Here at CGTI Technology, we help people develop their skills through
             computer software related courses.
           </p>
-          <button className="border rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
+          <button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
             Explore More
           </button>
         </div>
@@ -126,9 +126,9 @@ const HomeMid2 = () => {
       {/* Third Section Start */}
       <div className="grid lg:grid-cols-2 gap-x-10">
         {/* Right Side  start */}
-        <div className="px-5 lg:ml-12 lg:mt-10">
-          <h1 className="text-5xl font-bold mb-5">Develop Your <span className="text-[#155DFC] underline">Career</span></h1>
-          <p className="mb-5 w-[90%]">
+        <div className="px-5 lg:ml-12 lg:mt-10 Body-text">
+          <h1 className="text-5xl font-bold mb-5 Heading-text">Develop Your <span className="text-[#155DFC] underline">Career</span></h1>
+          <p className="mb-5 w-[90%] Body-text">
             Have you passed class 12th or graduation? Or you want to make your
             bright future in the field of computer.
           </p>
@@ -158,14 +158,14 @@ const HomeMid2 = () => {
         </div>
         {/* left side start */}
         <div className="lg:w-[90%] shadow-xl px-8 py-8 lg:mt-[-20px] relative z-20 rounded-sm hover:shadow-2xl">
-          <h1 className="text-5xl font-bold pt-6 mb-5">
+          <h1 className="Heading-text text-5xl font-bold pt-6 mb-5">
             Book <span className="text-[#155DFC] underline">Free</span> Demo Class
           </h1>
-          <p className="mb-5">
+          <p className="mb-5 Body-text">
             Thank you for reaching out to UtechSoftware! Please fill the form
             right. Our team will contact you shortly.
           </p>
-          <form action="" className="space-y-10">
+          <form action="" className="space-y-10 Body-text">
             <input
               type="text"
               placeholder="Name *"
@@ -198,7 +198,7 @@ const HomeMid2 = () => {
               className="bg-[#E8EDF6] px-2 py-3 w-full h-50 hover:shadow-xl"
             ></textarea>
 
-            <button className="border rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
+            <button className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
               Submit Form
             </button>
           </form>

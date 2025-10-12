@@ -22,15 +22,14 @@ function ContactUs() {
       </div>
 
       {/* ======= Contact Info Section ======= */}
-      <section className="bg-white py-16 px-6 lg:px-20 shadow-xl lg:w-[90%] mx-auto rounded-2xl -mt-10 relative z-10">
-        <h1 className="text-4xl font-extrabold tracking-[1px] mb-6 text-gray-800">
+      <section className="bg-[#F2F5FA] py-16 px-6 lg:px-20 shadow-4xl lg:w-[90%] mx-auto rounded-2xl -mt-15 relative z-10">
+        <h1 className="text-5xl font-extrabold tracking-[1px] mb-6 text-gray-800 Heading-text">
           Get in <span className="text-blue-600 underline">Touch</span>
         </h1>
-        <p className="text-gray-600 mb-12 lg:w-[80%]">
+        <p className="text-gray-600 mb-12 lg:w-[80%] Body-text">
           Have any doubts? Want to speak to us? Just reach out and we will get
           back to you as soon as possible.
         </p>
-
         <div className="grid lg:grid-cols-2 gap-12">
           {/* ======= Left Side ======= */}
           <div className="space-y-10">
@@ -39,27 +38,27 @@ function ContactUs() {
                 <FontAwesomeIcon icon={faLocationDot} className="text-4xl mt-1" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-gray-800">
+                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
                   Main Branch: IDPL (Rishikesh)
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 Body-text">
                   Gali No. 15, Geeta Nagar, IDPL, Virbhadra, Rishikesh,
                   Dehradun, Uttarakhand - 249202
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-x-6">
-              <div className=" p-4 rounded-full shadow-md">
+           <div className="flex gap-x-6">
+              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md">
                 <FontAwesomeIcon icon={faLocationDot} className="text-4xl mt-1" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-gray-800">
-                  Branch-2: Shyampur (Rishikesh)
+                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
+                 Branch-2: Shyampur (Rishikesh)
                 </h2>
-                <p className="text-gray-600">
-                  Guljar Farm, Gali No. 22, Hatt Road Shyampur, Rishikesh,
-                  Dehradun, Uttarakhand - 249204
+                <p className="text-gray-600 Body-text">
+                 Guljar Farm, Gali No.22, Hatt Road Shyampur, Rishikesh,
+                Dist.- Dehradun, Uttarakhand-249204
                 </p>
               </div>
             </div>
@@ -69,9 +68,9 @@ function ContactUs() {
                 <FontAwesomeIcon icon={faEnvelope} className="text-4xl mt-1" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-gray-800">Mail Us</h2>
-                <p className="text-gray-600">support@computerguru.co.in</p>
-                <p className="text-gray-600">cgtirishikesh@gmail.com</p>
+                <h2 className="text-xl font-semibold text-gray-800 Heading-text">Mail Us</h2>
+                <p className="text-gray-600 Body-text">support@computerguru.co.in</p>
+                <p className="text-gray-600 Body-text">cgtirishikesh@gmail.com</p>
               </div>
             </div>
 
@@ -80,16 +79,16 @@ function ContactUs() {
                 <FontAwesomeIcon icon={faPhone} className="text-4xl mt-1" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 ">Call Us</h2>
-                <p className="text-gray-600">+91 8077545036</p>
-                <p className="text-gray-600">+91 7060032534</p>
+                <h2 className="text-xl font-semibold text-gray-800 Heading-text">Call Us</h2>
+                <p className="text-gray-600 Body-text">+91 8077545036</p>
+                <p className="text-gray-600 Body-text">+91 7060032534</p>
               </div>
             </div>
           </div>
 
           {/* ======= Right Side: Contact Form ======= */}
           <div className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+            <h2 className="text-3xl font-semibold mb-6 text-gray-800 Heading-text">
               Send Us a Message
             </h2>
             <form className="space-y-5">
@@ -115,7 +114,7 @@ function ContactUs() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-lg font-semibold transition duration-300"
+                className="w-full Nav-text tracking-[1px] bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-lg font-semibold transition duration-300"
               >
                 Send Message
               </button>
@@ -123,7 +122,8 @@ function ContactUs() {
           </div>
         </div>
       </section>
-      <Footer />
+      <br /><br /><br />
+      <Footer/>
     </>
   );
 }

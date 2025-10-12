@@ -14,6 +14,7 @@ import img12 from "../Gallery/CGTIGallery12.jpeg";
 import img13 from "../Gallery/CGTIGallery13.jpeg";
 import img14 from "../Gallery/CGTIGallery14.jpeg";
 import img15 from "../Gallery/CGTIGallery15.jpeg";
+
 const photos = [
   { id: 1, src: img1, alt: "Gallery 1" },
   { id: 2, src: img2, alt: "Gallery 2" },
@@ -46,15 +47,15 @@ const Gallery = () => {
   return (
     <section className="bg-[#F9FAFB] py-18">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl tracking-[1px] text-center text-gray-800 mb-20 font-bold">
-          Where Passion Meets Technology
+        <h2 className="text-4xl tracking-[1px] text-center text-gray-800 mb-20 font-bold Heading-text">
+          Where Passion Meets <span className="text-[#005AAC] underline">Technology</span>
           <br />
-          <span className="text-gray-600 font-medium">
-            Explore Our Learning Moments
+          <span className="Heading-text">
+            Explore Our <span className="text-[#005AAC] underline">Learning</span> Moments
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
           {currentPhotos.map((photo) => (
             <div
               key={photo.id}

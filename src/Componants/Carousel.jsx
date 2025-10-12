@@ -145,8 +145,8 @@ const Slider = () => {
                   alt={`${feature.title} illustration`}
                   className="w-50 h-50 lg:w-40 lg:h-40  object-contain mx-auto"
                 />
-                <h2 className="lg:mb-2 font-bold tracking-[2px]">{`${feature.id}. ${feature.title}`}</h2>
-                <p className="text-2sm text-[black] tracking-[2px]">
+                <h2 className="lg:mb-2 font-bold Heading-text tracking-[1px]">{`${feature.id}. ${feature.title}`}</h2>
+                <p className="text-2sm text-[black] Body-text">
                   {feature.desc}
                 </p>
               </div>

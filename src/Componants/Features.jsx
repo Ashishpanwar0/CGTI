@@ -89,7 +89,7 @@ const Features = () => {
     <section className="bg-[#F7FAFF] py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
-        <h1 className="text-3xl font-bold text-center mb-10">
+        <h1 className="text-5xl font-bold text-center mb-10 Heading-text">
           Features & <span className="text-[#155DFC] underline">Facilities</span>
         </h1>
 
@@ -100,8 +100,8 @@ const Features = () => {
               key={item.id}
               className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300"
             >
-              <div className="mb-4">{item.icon}</div>
-              <h2 className="text-lg font-semibold">{item.title}</h2>
+              <div className="mb-4 Heading-text">{item.icon}</div>
+              <h2 className="text-lg font-semibold Body-text">{item.title}</h2>
             </div>
           ))}
         </div>

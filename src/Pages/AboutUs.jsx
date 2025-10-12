@@ -13,12 +13,12 @@ const AboutUs = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:px-29 lg:py-20 px-6 py-10 items-center gap-y-8">
         <div className="">
           <img src={CGTIlogo} alt="CGTI Logo" className="w-64 md:w-70 mb-5 mx-auto md:mx-10"/>
-          <h3 className="text-xl font-bold">
+          <h3 className="text-xl font-bold Heading-text">
             COMPUTER GURU TRAINING INSTITUTE
           </h3>
         </div>
 
-        <div className="space-y-4 text-gray-700 leading-relaxed text-justify lg:ml-[-40px]">
+        <div className="space-y-4 text-gray-700 leading-relaxed text-justify lg:ml-[-40px] Body-text">
           <p className="font-semibold">
             Computers have become an inevitable part of human life. Nowadays, we
             live in a world where Alexa plays music and Siri sets alarms on the

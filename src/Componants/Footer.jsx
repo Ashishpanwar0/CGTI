@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <footer className="bg-[#141b24] text-gray-300 py-10 px-6 md:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-15">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-15 Nav-text">
         {/* Logo and About */}
         <div>
           <img
@@ -24,7 +24,7 @@ const Footer = () => {
             alt="Computer Guru Training Institute"
             className="w-38 mb-4"
           />
-          <p className="text-1xl leading-relaxed text-gray-400 lg:w-[120%]">
+          <p className="text-1xl leading-relaxed text-gray-400 lg:w-[120%] Body-text">
             The best training centers in Rishikesh provide pupils with
             top-notch computer instruction and cutting-edge technology with a
             100% satisfaction rate.
@@ -53,8 +53,8 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="lg:ml-16">
-          <h3 className="text-white  mb-5 text-xl lg:mt-3">Quick Links</h3>
+        <div className="lg:ml-16 Nav-text">
+          <h3 className="text-white  mb-5 text-xl lg:mt-3 Heading-text">Quick Links</h3>
           <ul className="space-y-2 lg:space-y-6 text-1xl">
             {["Home", "About Us", "Courses", "Photo Gallery", "Contact Us"].map(
               (item) => (
@@ -76,8 +76,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div>
-          <h3 className="text-white mb-5 text-xl lg:mt-3">Contact Info</h3>
+        <div className="Nav-text">
+          <h3 className="text-white mb-5 text-xl lg:mt-3 Heading-text">Contact Info</h3>
           <ul className="space-y-3 lg:space-y-6 text-1xl">
             <li className="flex items-start gap-3">
               <FontAwesomeIcon
@@ -110,8 +110,8 @@ const Footer = () => {
         </div>
 
         {/* Latest News */}
-        <div className="lg:ml-10">
-          <h3 className="text-white mb-5 text-xl lg:mt-3">Latest News</h3>
+        <div className="lg:ml-10 Nav-text">
+          <h3 className="text-white mb-5 text-xl lg:mt-3 Heading-text">Latest News</h3>
           <div className="flex items-start gap-3 mb-4">
             <div>
               <p className="font-medium text-white text-1xl">मॉर्निंग बेल्स</p>

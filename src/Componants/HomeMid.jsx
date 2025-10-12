@@ -125,12 +125,12 @@ const HomeMid = ({}) => {
             >
               About
             </span> */}
-            <h1 className="lg:text-[42px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 tracking-[px]">
+            <h1 className="lg:text-[45px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 Heading-text tracking-[1px]">
               Computer Guru Training{" "}
               <span className="underline decoration-blue-500 text-[#155DFC]">Institute</span> -
               Rishikesh
             </h1>
-            <p className="text-1xl mb-5 text-justify tracking-[px] lg:w-[90%] text-[#C3C8C7] ">
+            <p className="text-1xl mb-5 text-justify Body-text lg:w-[90%] text-[#c3c8c7] ">
               Computer Guru Institute is one of the best training institutes in
               Rishikesh, offering modern technology and excellent computer
               training to students with 100% satisfaction. The institute has
@@ -139,7 +139,7 @@ const HomeMid = ({}) => {
               exposure, and career-oriented knowledge that helps students build
               a strong foundation for their bright future ahead.
             </p>
-            <p className="text-[#1F2531] text-justify tracking-[px] leading-[1.6] lg:w-[90%] mb-5">
+            <p className="text-[#1F2531] text-justify Heading-text lg:w-[90%] mb-5">
               Our institute not only focuses on computer skills but also on
               overall personality development, communication, and confidence
               building. We believe that true education comes with practical
@@ -147,19 +147,19 @@ const HomeMid = ({}) => {
               projects and assignments.
             </p>
 
-            <p className="text-[#1F2531] text-justify tracking-[px] lg:w-[90%] mb-5">
+            <p className="text-[#1F2531] text-justify lg:w-[90%] mb-5 Heading-text">
               With flexible class timings, affordable fee structure, and
               career-oriented courses, Computer Guru Training Institute has
               become the first choice for students in Rishikesh who want to make
               a strong career in the digital era.
             </p>
 
-            <p className="text-[#1F2531] text-justify tracking-[px] leading-[1.6] lg:w-[90%] mb-8">
+            <p className="text-[#1F2531] text-justify Heading-text lg:w-[90%] mb-8">
               Our vision is to empower every student with computer knowledge so
               that they are ready to face future challenges and grab better
               opportunities in both education and employment.
             </p>
-            <button className="border-1 rounded-xl px-6 py-3 tracking-[2px]">
+            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text">
               Explore More
             </button>
           </div>
@@ -167,7 +167,7 @@ const HomeMid = ({}) => {
 
         <div>
           <h1
-            className="lg:text-[150px] text-5xl font-extrabold bg-clip-text text-transparent bg-center bg-cove lg:text-center lg:px-0 px-8 tracking-[2px]"
+            className="lg:text-[150px] text-5xl font-extrabold bg-clip-text text-transparent bg-center bg-cove lg:text-center lg:px-0 px-8 tracking-[1px] Heading-text"
             style={{ backgroundImage: `url(${TextBackGroundColoreImage})` }}
           >
             Lead the Future
@@ -177,11 +177,11 @@ const HomeMid = ({}) => {
 
       <section>
         <div className="lg:flex bg-[#F2F5FA] lg:h-140 h-120 justify-center lg:px-10 lg:pt-20 pt-10 px-8 space-y-5">
-          <h1 className="lg:text-4xl font-extrabold lg:w-full text-3xl tracking-[px]">
-            <span className="underline decoration-blue-500 text-[#155DFC]">Courses</span>{" "}
+          <h1 className="lg:text-4xl font-extrabold lg:w-full text-3xl Heading-text">
+            <span className="underline decoration-blue-500 text-[#155DFC] Heading-text">Courses</span>{" "}
             tailored to your needs
           </h1>
-          <p className="lg:w-2/2 tracking-[px]">
+          <p className="lg:w-2/2 Body-text">
             Our computer courses are carefully designed to provide a
             comprehensive and dynamic learning experience for students of all
             levels, from beginners to advanced users.
@@ -204,13 +204,13 @@ const HomeMid = ({}) => {
               <SwiperSlide key={course.id}>
                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-xl transition duration-300 space-y-5">
                   <div className="w-full">{course.ican}</div>
-                  <h1 className="text-[22px] font-bold mb-5 tracking-[px]">
+                  <h1 className="text-[22px] font-bold mb-5 Heading-text">
                     {course.title}
                   </h1>
-                  <p className="text-gray-600 text-1xl mb-8 tracking-[px]">
+                  <p className="text-gray-600 text-1xl mb-8 Body-text">
                     {course.desc}
                   </p>
-                  <ul className="space-y-5 tracking-[2px]">
+                  <ul className="space-y-5 Body-text">
                     {course.module.map((mod, i) => (
                       <li key={i}>
                         <span className="text-teal-500 mr-2">✔</span>
@@ -223,11 +223,11 @@ const HomeMid = ({}) => {
             ))}
           </Swiper>
         </div>
-        <div className="mt-6 text-center tracking-[2px]">
-          <h1 className="mb-6 text-xl">
+        <div className="mt-10 text-center">
+          <h1 className="mb-6 text-xl Heading-text">
             We have all the courses to help you improve your career.
           </h1>
-          <button className="border-1 rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017]">
+          <button className="border-1 rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] Nav-text tracking-[1px]">
             Explore More
           </button>
         </div>
