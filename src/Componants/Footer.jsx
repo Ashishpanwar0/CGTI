@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CGTIlogo from '../assets/CGTIlogo.png';
 import {
   faPhone,
@@ -17,7 +18,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#141b24] text-gray-300 py-10 px-6 md:px-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-15 Nav-text">
-        {/* Logo and About */}
         <div>
           <img
             src={CGTIlogo}
@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="lg:ml-16 Nav-text">
           <h3 className="text-white  mb-5 text-xl lg:mt-3 Heading-text">Quick Links</h3>
           <ul className="space-y-2 lg:space-y-6 text-1xl">
-            {["Home", "About Us", "Courses", "Photo Gallery", "Contact Us"].map(
+            {/* {["Home", "About Us", "Courses", "Photo Gallery", "Contact Us"].map(
               (item) => (
                 <li key={item}>
                   <a
@@ -71,7 +71,12 @@ const Footer = () => {
                   </a>
                 </li>
               )
-            )}
+            )} */}
+          <Link to="/" className="block hover:text-blue-500 Nav-text">Home</Link>
+          <Link to="/AboutUs" className="block hover:text-blue-500 Nav-text">About</Link>
+          <Link to="/Courses" className="block hover:text-blue-500 Nav-text">Courses</Link>
+          <Link to="/PhotoGallery" className="block hover:text-blue-500 Nav-text">Photo Gallery</Link>
+          <Link to="/ContactUs" className="block hover:text-blue-500 Nav-text">Contact Us</Link>
           </ul>
         </div>
 
@@ -142,5 +147,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

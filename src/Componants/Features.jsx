@@ -105,7 +105,7 @@ const FeaturesData = [
 
 const Features = () => {
   return (
-    <section className="bg-[#F7FAFF] py-12">
+    <section className="bg-[#F2F5FA] py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <h1 className="text-5xl font-bold text-center mb-10 Heading-text">

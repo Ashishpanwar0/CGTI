@@ -2,43 +2,62 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import {Autoplay, Pagination } from "swiper/modules";
+import CGTIanshu from "../Testimonial-photos/CGTIAnahu.jpeg";
+import CGTIpriyanshu from "../Testimonial-photos/CGTIPRIYANSHU.jpg";
+import ishu from "../Testimonial-photos/CGTIISHU.jpeg";
+import jiya from "../Testimonial-photos/CGTIJIYA.jpeg";
+import rohit from "../Testimonial-photos/CGTIROHIT.jpg";
 
 const testimonials = [
   {
     id: 1,
     name: "Ashish Panwar",
     course: "Full Stack Development",
-    photo: "/assets/student1.png",
+    photo: CGTIanshu,
     text: "The training was very professional and practical. I got hands-on experience with real projects and my confidence boosted a lot. Highly recommend this institute!",
   },
   {
     id: 2,
     name: "Ankit Negi",
     course: "UI/UX Design",
-    photo: "/assets/student2.png",
+    photo: rohit,
     text: "The faculty here are really helpful and knowledgeable. I learned not just design but also how to work in real-life projects. Best place to learn modern tech skills.",
   },
   {
     id: 3,
     name: "Priyanshu",
     course: "Backend Engineering",
-    photo: "/assets/student3.png",
+    photo: CGTIpriyanshu,
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
   },
   {
     id: 4,
-    name: "Aditya",
-    course: "Backend Engineering",
-    photo: "/assets/student3.png",
+    name: "Ishu",
+    course: "Programing",
+    photo: ishu,
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
   },
   {
     id: 5,
     name: "Jiya Semwal",
     course: "Backend Engineering",
-    photo: "/assets/student3.png",
+    photo: jiya,
     text: "I really loved the flexible timings and practical sessions. Now I feel ready for industry-level backend development. This was a turning point in my career.",
+  },
+  {
+    id: 6,
+    name: "Ashish Panwar",
+    course: "Full Stack Development",
+    photo: CGTIanshu,
+    text: "The training was very professional and practical. I got hands-on experience with real projects and my confidence boosted a lot. Highly recommend this institute!",
+  },
+  {
+    id: 7,
+    name: "Ashish Panwar",
+    course: "Full Stack Development",
+    photo: CGTIanshu,
+    text: "The training was very professional and practical. I got hands-on experience with real projects and my confidence boosted a lot. Highly recommend this institute!",
   },
 ];
 
@@ -51,19 +70,18 @@ const Testimonials = () => {
         <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-12">
           What Our <span className="text-[#155DFC] underline">Students</span> Say
         </h2>
-
-        {/* Swiper Testimonials */}
         <Swiper
-          slidesPerView={1}
-          spaceBetween={25}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          modules={[Pagination]}
-        >
+  slidesPerView={1}
+  spaceBetween={25}
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 2500, disableOnInteraction: false }}
+  breakpoints={{
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  }}
+  modules={[Pagination, Autoplay]} 
+>
           {testimonials.map((t) => (
             <SwiperSlide key={t.id}>
               <div
@@ -90,7 +108,6 @@ const Testimonials = () => {
 
         {/* Social Media Embed Section */}
         <div className="lg:flex space-y-10 mt-19">
-          {/* Facebook Embed */}
           <div className="w-full">
             <div className="w-full">
               <iframe

@@ -51,9 +51,6 @@ const features = [
 ];
 const Slider = () => {
   const images = [
-    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-2.jpg",
-    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-3.jpg",
-    // "https://computerguru.co.in/wp-content/uploads/2023/10/Computer-Guru-Training-Institute-banner-1.jpg",
     { id: 1, img: CGTIBanner1, alt: "CGTISlider1" },
     { id: 2, img: CGTIBanner2, alt: "CGTISlider2" },
     { id: 3, img: CGTIBanner3, alt: "CGTISlider3" },
@@ -98,8 +95,7 @@ const Slider = () => {
           setIndex(index - 1);
         }
       }
-    }, 4000); // every 4 sec
-
+    }, 4000); 
     return () => clearInterval(timer);
   }, [index, direction, images.length]);
 

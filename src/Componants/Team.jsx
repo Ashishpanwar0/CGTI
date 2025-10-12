@@ -47,25 +47,25 @@ const courses = [
   {
     id: 1,
     title: "Diploma Courses",
-    desc: "We provides various types of Diploma courses for one year. All these are job oriented courses with basic to advance.",
+    desc: "Our one-year Diploma Courses are designed to build a strong foundation in computer education from basic to advanced levels. Each course focuses on practical, job-oriented training that prepares students for real-world careers in IT and related fields.",
     color: "bg-blue-50 text-blue-600",
   },
   {
     id: 2,
     title: "Certificate Courses",
-    desc: "The duration of these courses is not very long. These courses are for working or non-working people. Therefore it is easy to complete this type of course in less months.",
+    desc: "Our Certificate Courses are short and flexible programs ideal for students, professionals, or homemakers. These courses are designed to enhance specific computer skills within a short duration, making them perfect for skill development and career growth.",
     color: "bg-purple-50 text-purple-600",
   },
   {
     id: 3,
     title: "Short Term Courses",
-    desc: "This course is done keeping in mind a particular software or model. So it is easy to complete this type of course in less time with best learning.",
+    desc: "Short Term Courses focus on specific software, tools, or technologies that are in high demand. These quick, targeted programs help learners gain specialized knowledge and hands-on experience in a short time, boosting productivity and employability.",
     color: "bg-blue-600 text-white",
   },
   {
     id: 4,
     title: "Computer Teacher Training (CTTC)",
-    desc: "This program is for those who want to make their career in teaching and training field. In the CTTC course, learners will not only acquire computer knowledge but will also learn how to effectively transfer this knowledge to their students.",
+    desc: "The CTTC program is designed for individuals aspiring to become computer educators. It combines in-depth computer knowledge with effective teaching methodologies, helping learners develop both technical expertise and classroom management skills.",
     color: "bg-green-50 text-green-600",
   },
 ];
@@ -117,7 +117,7 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
+                  <h3 className="text-xl font-bold text-gray-800 ">{member.name}</h3>
                   <p className="text-sm text-gray-500">{member.position}</p>
                 </div>
               </div>
@@ -138,11 +138,11 @@ const Team = () => {
                 key={course.id}
                 className={`${course.color} rounded-2xl p-6 shadow hover:shadow-lg transition relative`}
               >
-                <span className="absolute bottom-4 right-4 text-6xl font-extrabold opacity-10">
+                <span className="absolute right-2 -top-1 text-6xl font-extrabold opacity-20">
                   {index + 1 < 10 ? `0${index + 1}` : index + 1}
                 </span>
-                <h3 className="text-lg font-bold mb-3 Heading-text">{course.title}</h3>
-                <p className="text-1xl leading-relaxed Body-text">{course.desc}</p>
+                <h3 className="text-lg font-bold mb-3 Heading-text Heading-text">{course.title}</h3>
+                <p className="text-1xl leading-relaxed Body-text Body-text">{course.desc}</p>
               </div>
             ))}
           </div>
