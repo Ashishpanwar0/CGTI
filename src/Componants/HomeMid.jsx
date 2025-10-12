@@ -2,7 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGears } from "@fortawesome/free-solid-svg-icons";
+import { faGears,
+  faPaintBrush,
+  faCode,
+  faLaptopCode,
+  faLayerGroup, } from "@fortawesome/free-solid-svg-icons";
 import CGTIHomeMid from "../assets/CGTIHomeMid.png";
 import TextBackGroundColoreImage from "../assets/TextBackGroundColoreImage.jpg";
 
@@ -10,101 +14,95 @@ const Courses = [
   {
     id: 1,
     title: "Advance Diploma in Computer Applications (ADCA)",
-    desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+    desc: "Gain complete knowledge of computers with a focus on office tools, accounting, and taxation. Ideal for students starting their computer education journey.",
     ican: (
       <FontAwesomeIcon
         icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
+        style={{ fontSize: "60px", color: "#4b5563" }}
       />
     ),
     module: [
-      "Basic Fundamental of computer",
+      "Basic Fundamentals of Computer",
       "Typing (English/Hindi)",
       "Microsoft Office",
       "Fundamentals of Accounts",
-      "Accounting Package Tally",
+      "Accounting Package (Tally)",
       "Taxation (GST / TDS / TCS)",
     ],
   },
   {
     id: 2,
-    title: "Advance Diploma in Computer Applications (ADCA)",
-    desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+    title: "Advance Diploma in Desktop Publishing / Graphic Designing (ADDP)",
+    desc: "Learn professional graphic designing and publishing with industry-standard tools like Photoshop, Illustrator, and CorelDRAW for print and digital media.",
     ican: (
       <FontAwesomeIcon
-        icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
+        icon={faPaintBrush}
+        style={{ fontSize: "60px", color: "#4b5563" }}
       />
     ),
     module: [
-      "Basic Fundamental of computer",
-      "Typing (English/Hindi)",
-      "Microsoft Office",
-      "Fundamentals of Accounts",
-      "Accounting Package Tally",
-      "Taxation (GST / TDS / TCS)",
+      "Basic Fundamentals of Computer",
+      "Adobe Photoshop",
+      "CorelDRAW",
+      "Adobe Illustrator",
+      "Adobe InDesign",
     ],
   },
   {
     id: 3,
-    title: "Advance Diploma in Computer Applications (ADCA)",
-    desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+    title: "Programming Fundamentals (C, C++, Java, Python)",
+    desc: "Start your programming journey by learning logic building and coding fundamentals with the most popular programming languages.",
     ican: (
       <FontAwesomeIcon
-        icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
+        icon={faCode}
+        style={{ fontSize: "60px", color: "#4b5563" }}
       />
     ),
     module: [
-      "Basic Fundamental of computer",
-      "Typing (English/Hindi)",
-      "Microsoft Office",
-      "Fundamentals of Accounts",
-      "Accounting Package Tally",
-      "Taxation (GST / TDS / TCS)",
+      "Introduction to Programming",
+      "C Language",
+      "C++ (Object-Oriented Programming)",
+      "Core Java",
+      "Python Programming",
+      "Project Work & Assignments",
     ],
   },
   {
-    id: 3,
-    title: "Advance Diploma in Computer Applications (ADCA)",
-    desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+    id: 4,
+    title: "Web Design & Development",
+    desc: "Master front-end and back-end development to build responsive and interactive websites using modern web technologies.",
     ican: (
       <FontAwesomeIcon
-        icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
+        icon={faLaptopCode}
+        style={{ fontSize: "60px", color: "#4b5563" }}
       />
     ),
     module: [
-      "Basic Fundamental of computer",
-      "Typing (English/Hindi)",
-      "Microsoft Office",
-      "Fundamentals of Accounts",
-      "Accounting Package Tally",
-      "Taxation (GST / TDS / TCS)",
+      "HTML, CSS, JavaScript",
+      "Responsive Web Design",
+      "Bootstrap & Tailwind CSS",
+      "React.js",
+      "Node.js & Express.js",
+      "MySQL / MongoDB",
     ],
   },
   {
-    id: 3,
-    title: "Advance Diploma in Computer Applications (ADCA)",
-    desc: "As we know that computers are become our basic need. We provide fundamental computer knowledge along with a professional computer course to improve your skills.",
+    id: 5,
+    title: "Programming and Full Stack Development",
+    desc: "Become a professional full-stack developer by learning both front-end and back-end technologies with real-world project experience.",
     ican: (
       <FontAwesomeIcon
-        icon={faGears}
-        beatFade
-        style={{ fontSize: "70px", color: "#74C0FC" }}
+        icon={faLayerGroup}
+        style={{ fontSize: "60px", color: "#4b5563" }}
       />
     ),
     module: [
-      "Basic Fundamental of computer",
-      "Typing (English/Hindi)",
-      "Microsoft Office",
-      "Fundamentals of Accounts",
-      "Accounting Package Tally",
-      "Taxation (GST / TDS / TCS)",
+      "HTML, CSS, JavaScript (Front-End)",
+      "React.js & Tailwind CSS",
+      "Node.js & Express.js",
+      "Database (MySQL / MongoDB)",
+      "API Development",
+      "Final Project: Full Stack Application",
     ],
   },
 ];
@@ -159,7 +157,7 @@ const HomeMid = ({}) => {
               that they are ready to face future challenges and grab better
               opportunities in both education and employment.
             </p>
-            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text">
+            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text bg-blue-700 hover:bg-blue-800 text-white">
               Explore More
             </button>
           </div>
@@ -227,7 +225,7 @@ const HomeMid = ({}) => {
           <h1 className="mb-6 text-xl Heading-text">
             We have all the courses to help you improve your career.
           </h1>
-          <button className="border-1 rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] Nav-text tracking-[1px]">
+          <button className="border-1 rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white Nav-text tracking-[1px]">
             Explore More
           </button>
         </div>

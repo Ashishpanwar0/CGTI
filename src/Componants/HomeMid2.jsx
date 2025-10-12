@@ -110,7 +110,7 @@ const HomeMid2 = () => {
             Here at CGTI Technology, we help people develop their skills through
             computer software related courses.
           </p>
-          <button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
+          <button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
             Explore More
           </button>
         </div>
@@ -198,7 +198,7 @@ const HomeMid2 = () => {
               className="bg-[#E8EDF6] px-2 py-3 w-full h-50 hover:shadow-xl"
             ></textarea>
 
-            <button className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-[#005EAA] hover:bg-[#D4A017] text-white">
+            <button className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
               Submit Form
             </button>
           </form>
