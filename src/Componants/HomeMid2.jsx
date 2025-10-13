@@ -6,8 +6,7 @@ import CGTIMid2 from "../assets/CGTIMid2.1.png";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  return (
+    return (
     <div className="space-y-5 lg:w-[98%]">
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -28,6 +27,47 @@ const AccordionItem = ({ title, content }) => {
 };
 
 const HomeMid2 = () => {
+   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contact: "",
+    location: "",
+    education: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/demo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("Demo booked successfully");
+        setFormData({
+          name: "",
+          email: "",
+          contact: "",
+          location: "",
+          education: "",
+          message: "",
+        });
+      } else {
+        setStatus("Failed to book demo. Try again.");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("Server error. Please try later.");
+    }
+  };
   return (
     <section className="pt-15 bg-[#F8FAFC]">
       {/* First Section Start */}
@@ -165,43 +205,63 @@ const HomeMid2 = () => {
             Thank you for reaching out to UtechSoftware! Please fill the form
             right. Our team will contact you shortly.
           </p>
-          <form action="" className="space-y-10 Body-text">
+         <form onSubmit={handleSubmit} className="space-y-5 Body-text">
             <input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               type="text"
               placeholder="Name *"
               className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"
             />
             <input
-              type="text"
-              placeholder="Name *"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              type="email"
+              placeholder="Email *"
               className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"
             />
             <input
+              name="contact"
+              value={formData.contact}
+              onChange={handleChange}
               type="text"
-              placeholder="Name *"
+              placeholder="Contact No *"
               className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"
             />
             <input
+              name="location"
+              value={formData.location}
+              onChange={handleChange}
               type="text"
-              placeholder="Name *"
+              placeholder="Location"
               className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"
             />
             <input
+              name="education"
+              value={formData.education}
+              onChange={handleChange}
               type="text"
-              placeholder="Name *"
+              placeholder="Higher Education"
               className="bg-[#E8EDF6] px-2 py-3 w-full rounded-sm hover:shadow-xl"
             />
             <textarea
-              name=""
-              id=""
-              placeholder="Message *"
-              className="bg-[#E8EDF6] px-2 py-3 w-full h-50 hover:shadow-xl"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Message"
+              className="bg-[#E8EDF6] px-2 py-3 w-full h-32 hover:shadow-xl"
             ></textarea>
 
-            <button className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
+            <button
+              type="submit"
+              className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white"
+            >
               Book Demo
             </button>
           </form>
+          {status && <p className="mt-4 text-green-600">{status}</p>}
         </div>
       </div>
     </section>
