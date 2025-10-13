@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Componants/Navbar";
 import Footer from "../Componants/Footer";
 import SecondHeader from "../Componants/SecondHeader";
@@ -10,6 +10,41 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("Failed to send message. Try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus("Server error. Please try again later.");
+    }
+  };
   return (
     <>
       <Navbar />
@@ -91,34 +126,47 @@ function ContactUs() {
             <h2 className="text-3xl font-semibold mb-6 text-gray-800 Heading-text">
               Send Us a Message
             </h2>
-            <form className="space-y-5">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <textarea
-                placeholder="Your Message"
-                rows="4"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full Nav-text tracking-[1px] bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-lg font-semibold transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>
+            <form onSubmit={handleSubmit} className="space-y-5">
+  <input
+    type="text"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    placeholder="Full Name"
+    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+  <input
+    type="email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    placeholder="Email Address"
+    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+  <input
+    type="text"
+    name="subject"
+    value={formData.subject}
+    onChange={handleChange}
+    placeholder="Subject"
+    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+  <textarea
+    name="message"
+    value={formData.message}
+    onChange={handleChange}
+    placeholder="Your Message"
+    rows="4"
+    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  ></textarea>
+  <button
+    type="submit"
+    className="w-full Nav-text tracking-[1px] bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-lg font-semibold transition duration-300"
+  >
+    Send Message
+  </button>
+</form>
+            {status && <p className="mt-4 text-center text-lg font-medium text-green-600">{status}</p>}
           </div>
         </div>
       </section>
