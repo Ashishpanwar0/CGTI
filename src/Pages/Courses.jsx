@@ -31,6 +31,31 @@ const CourseSection = [
    src: img4, alt: "Course4",
     title: "Advance Diploma in Website Designing (ADWD)"
   },
+  {
+    id: 5,
+   src: img4, alt: "Course5",
+    title: "Diploma In Financial Accounting (DFA)"
+  },
+  {
+    id: 6,
+   src: img4, alt: "Course6",
+    title: "Certificate in Computer Application (CCA)"
+  },
+  {
+    id: 7,
+   src: img4, alt: "Course7",
+    title: "Computer Teacher Training Course (CTTC)"
+  },
+  {
+    id: 8,
+   src: img4, alt: "Course8",
+    title: "Certificate in Data Entry Operator"
+  },
+  {
+    id: 9,
+   src: img4, alt: "Course9",
+    title: "Typing: Hindi/English"
+  },
 ]
 
 function Courses() {
