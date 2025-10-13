@@ -4,11 +4,19 @@ import Footer from "../Componants/Footer";
 import SecondHeader from "../Componants/SecondHeader";
 import CGTICourses from  "../assets/CGTI Courses.jpg";
 
-import img1 from "../Gallery/CGTIGallery1.jpg";
-import img2 from "../Gallery/CGTIGallery1.jpg";
-import img3 from "../Gallery/CGTIGallery1.jpg";
-import img4 from "../Gallery/CGTIGallery1.jpg";
-import img5 from "../Gallery/CGTIGallery1.jpg";
+import img1 from "../Coursesgallery/Courses-1.png";
+import img2 from "../Coursesgallery/Courses-2.png";
+import img3 from "../Coursesgallery/Courses-3.jpg";
+import img4 from "../Coursesgallery/Courses-4.png";
+import img5 from "../Coursesgallery/Courses-5.jpg";
+import img6 from "../Coursesgallery/Courses-6.png";
+import img7 from "../Coursesgallery/Courses-7.png";
+import img8 from "../Coursesgallery/Courses-8.png";
+import img9 from "../Coursesgallery/Courses-9.jpg";
+
+
+
+
 
 const CourseSection = [
   {
@@ -33,27 +41,27 @@ const CourseSection = [
   },
   {
     id: 5,
-   src: img4, alt: "Course5",
+   src: img5, alt: "Course5",
     title: "Diploma In Financial Accounting (DFA)"
   },
   {
     id: 6,
-   src: img4, alt: "Course6",
+   src: img6, alt: "Course6",
     title: "Certificate in Computer Application (CCA)"
   },
   {
     id: 7,
-   src: img4, alt: "Course7",
+   src: img7, alt: "Course7",
     title: "Computer Teacher Training Course (CTTC)"
   },
   {
     id: 8,
-   src: img4, alt: "Course8",
+   src: img8, alt: "Course8",
     title: "Certificate in Data Entry Operator"
   },
   {
     id: 9,
-   src: img4, alt: "Course9",
+   src: img9, alt: "Course9",
     title: "Typing: Hindi/English"
   },
 ]
