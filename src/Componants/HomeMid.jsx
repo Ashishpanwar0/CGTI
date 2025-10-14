@@ -18,8 +18,7 @@ const Courses = [
     ican: (
       <FontAwesomeIcon
         icon={faGears}
-        style={{ fontSize: "60px", color: "#4b5563" }}
-      />
+        style={{ fontSize: "60px", color: "#000000" }}/>
     ),
     module: [
       "Basic Fundamentals of Computer",
@@ -37,7 +36,7 @@ const Courses = [
     ican: (
       <FontAwesomeIcon
         icon={faPaintBrush}
-        style={{ fontSize: "60px", color: "#4b5563" }}
+        style={{ fontSize: "60px", color: "#000000" }}
       />
     ),
     module: [
@@ -55,7 +54,7 @@ const Courses = [
     ican: (
       <FontAwesomeIcon
         icon={faCode}
-        style={{ fontSize: "60px", color: "#4b5563" }}
+        style={{ fontSize: "60px", color: "#000000"}}
       />
     ),
     module: [
@@ -74,8 +73,8 @@ const Courses = [
     ican: (
       <FontAwesomeIcon
         icon={faLaptopCode}
-        style={{ fontSize: "60px", color: "#4b5563" }}
-      />
+        style={{ fontSize: "60px", color: "#000000"}}
+     />
     ),
     module: [
       "HTML, CSS, JavaScript",
@@ -93,7 +92,7 @@ const Courses = [
     ican: (
       <FontAwesomeIcon
         icon={faLayerGroup}
-        style={{ fontSize: "60px", color: "#4b5563" }}
+        style={{ fontSize: "60px", color: "#000000" }}
       />
     ),
     module: [

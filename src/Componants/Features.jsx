@@ -133,11 +133,11 @@ const Features = () => {
           </div>
           <div className="lg:mt-10 text-center lg:text-start space-y-5"> 
              <FontAwesomeIcon icon={faPhoneFlip} className="text-8xl mt-5 lg:ml-20" beat style={{color: "#ffffff",}} />
-              <h1 className="text-2xl lg:mt-2 text-white font-extrabold Body-text">for enquiry Call us <span className="text-black underline text-4xl">now</span></h1>
+              <h1 className="text-2xl lg:mt-2 text-white font-extrabold Body-text">for enquiry Call us <span className="text-black underline text-5xl CGTISpacial">now</span></h1>
               <h1 className="text-3xl text-white font-bold">+91-75006 79066</h1>
               <a href="/ContactUs"><button
                 type="submit"
-                className="Nav-text tracking-[1px] bg-[#00BBF0] hover:bg-[#00bcf094] text-black py-4 px-6 rounded-lg font-semibold transition duration-300" >
+                className="Nav-text tracking-[1px] bg-[#00BBF0] hover:bg-[#00bcf094] text-white py-4 px-6 rounded-lg font-semibold transition duration-300" >
                 Contact Us
               </button></a>
           </div>

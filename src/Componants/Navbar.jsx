@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBraille, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Homesidebar from "./Homesidebar";
 
 import CGTIMail from "../assets/CGTIMail.gif";
 import CGTIlocation from "../assets/CGTIlocation.gif";
@@ -15,6 +16,7 @@ import Dotee from "../assets/dots.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // Scroll effect for sticky navbar
   useEffect(() => {
@@ -95,9 +97,13 @@ const Navbar = () => {
             style={{ color: "#FFFFFF" }}
             className="ml-4"
           /> */}
-          <img src={Dotee} alt="CGTIHome" className="lg:w-15 ml-1"/>
+          <img
+            src={Dotee}
+            alt="CGTIHome"
+            className="lg:w-15 ml-1 cursor-pointer"
+            onClick={() => setSidebarOpen(true)}
+          />
         </div>
-
         <div>
           <img src={CGTIlogo} alt="CGTI Logo" className="lg:w-98" />
         </div>
@@ -127,6 +133,7 @@ const Navbar = () => {
       {/* Mobile Menu Section */}
       <div className="px-4 py-2 lg:shadow-none shadow-2xl z-30 relative">
         <div className="flex items-center justify-between">
+          
           <div className="lg:hidden">
             <img src={CGTIlogo} alt="" className="w-80" />
           </div>
@@ -164,11 +171,25 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
+      {/* Sidebar (no dark background) */}
+      <div
+        className={`fixed top-0 left-0 h-full w-[380px] bg-[#1F2531] z-[9999] shadow-2xl transform transition-transform duration-500 overflow-y-auto ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <button
+          className="absolute top-3 right-2 text-white text-3xl"
+          onClick={() => setSidebarOpen(false)}
+        >
+          &times;
+        </button>
+        <Homesidebar />
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
-
 
 /////// this is nevbar new Fix Contant /////

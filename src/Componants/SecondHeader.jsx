@@ -8,7 +8,7 @@ const SecondHeader = ({ bgImage, title, subtitle }) => {
       <div className="absolute inset-0 bg-[#00000075]"></div>
       <h1 className="text-5xl md:text-7xl font-extrabold z-10 tracking-[2px] lg:mt-[-40px] Heading-text">{title}</h1>
       <p className="text-lg md:text-2xl font-medium relative z-10 mt-2 tracking-[2px] lg:ml-1 Body-text">
-        <a href="/" className="text-gray-200">{subtitle}</a>
+        <a href="/" className="text-gray-200 CGTISpacial">{subtitle}</a>
       </p>
     </section>
   );

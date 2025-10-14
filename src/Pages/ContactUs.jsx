@@ -120,7 +120,7 @@ function ContactUs() {
                 <p className="text-gray-600 Body-text">+91 7060032534</p>
               </div>
             </div>
-          </div>
+          </div> 
 
           {/* ======= Right Side: Contact Form ======= */}
           <div className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
