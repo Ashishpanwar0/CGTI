@@ -11,6 +11,7 @@ import CGTIFacbook from "../assets/CGTIFacbook.gif";
 import CGTIInsta from "../assets/CGTIInstragram.gif";
 import CGTILink from "../assets/CGTILink.gif.gif";
 import CGTITwitter from "../assets/CGTITwitter.gif";
+import Dotee from "../assets/dots.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -87,13 +88,14 @@ const Navbar = () => {
         id="mainNavbar"
         className="lg:flex items-center text-1xl shadow-2sm space-x-15 hidden transition-all duration-300"
       >
-        <div className="bg-[#005AAC] py-9 w-20">
-          <FontAwesomeIcon
+        <div className="bg-[#005AAC] py-6 w-20">
+          {/* <FontAwesomeIcon
             icon={faBraille}
             size="2xl"
             style={{ color: "#FFFFFF" }}
             className="ml-4"
-          />
+          /> */}
+          <img src={Dotee} alt="CGTIHome" className="lg:w-15 ml-1"/>
         </div>
 
         <div>
