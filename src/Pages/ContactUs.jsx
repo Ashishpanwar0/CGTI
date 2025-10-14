@@ -9,6 +9,7 @@ import {
   faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Homesidebar from "../Componants/Homesidebar";
 function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
@@ -172,6 +173,7 @@ function ContactUs() {
       </section>
       <br /><br /><br />
       <Footer/>
+      <Homesidebar/>
     </>
   );
 }
