@@ -71,7 +71,7 @@ function Courses() {
      <>
       <Navbar/>
       <SecondHeader bgImage={CGTICourses} title="Courses " subtitle="Home . Courses" />
-     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:px-10 py-20 p-5">
+     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:px-10 py-20 p-5" data-aos="zoom-in">
         {CourseSection.map((course) => (
           <div key={course.id} className="text-center shadow-lg rounded-lg p-4 hover:shadow-xl transition">
             <img

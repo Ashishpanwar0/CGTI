@@ -106,10 +106,10 @@ const FeaturesData = [
 const Features = () => {
   return (
     <section className="bg-[#F2F5FA] py-12">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6" data-aos="zoom-in">
         {/* Title */}
         <h1 className="text-5xl font-bold text-center mb-10 Heading-text">
-          Features & <span className="text-[#155DFC] underline">Facilities</span>
+          Features & <span className="text-[#155DFC] underline CGTISpacial text-5xl">Facilities</span>
         </h1>
 
         {/* Grid */}

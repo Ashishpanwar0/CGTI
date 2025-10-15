@@ -112,7 +112,7 @@ const Slider = () => {
               key={image.id}
               src={image.img}
               alt={image.alt}
-              className="w-full flex-shrink-0 object-cover h-60 sm:h-72 md:h-96 lg:h-[500px]"
+              className="w-full flex-shrink-0 object-cover h-auto sm:h-72 md:h-auto lg:h-auto "
             />
           ))}
         </div>

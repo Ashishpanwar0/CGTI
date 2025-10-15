@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,6 @@ import { faGears,
   faLayerGroup, } from "@fortawesome/free-solid-svg-icons";
 import CGTIHomeMid from "../assets/CGTIHomeMid.png";
 import TextBackGroundColoreImage from "../assets/TextBackGroundColoreImage.jpg";
-
 const Courses = [
   {
     id: 1,
@@ -111,20 +110,21 @@ const HomeMid = ({}) => {
     <section className="bg-[#F8FAFC] py-8">
       <section className="pt-8 py-6 ">
         {/* first Section Start */}
-        <div className="grid lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8">
-          <div className="">
-            <img src={CGTIHomeMid} alt="" className="lg:w-[100%]" />
+        <div className="grid lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+          <div className="md:px-6"> 
+            <img src={CGTIHomeMid} alt="" className="lg:w-[100%] md:w-[100%]" />
           </div>
-          <div className="">
+          <div className="px-6 lg:px-0">
             {/* <span
               className="absolute text-[110px] text-[#E3E7ED] lg:mt-[-110px] lg:ml-10 tracking-[10px] font-extrabold select-none 
                  stroke-text"
             >
               About
             </span> */}
-            <h1 className="lg:text-[45px] text-4xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 Heading-text tracking-[1px]">
+            <h1 className="lg:text-[45px] text-3xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 Heading-text tracking-[1px]">
               Computer Guru Training{" "}
-              <span className="underline decoration-blue-500 text-[#155DFC]">Institute</span> -
+              <span className="underline decoration-blue-500 text-[#155DFC] CGTISpacial text-5xl">Institute</span> -
               Rishikesh
             </h1>
             <p className="text-1xl mb-5 text-justify Body-text lg:w-[90%] text-[#c3c8c7] ">
@@ -186,7 +186,7 @@ const HomeMid = ({}) => {
         </div>
 
         {/* Course Card Section Start */}
-        <div className="lg:w-full mx-auto px-8 lg:px-18 mt-[-230px] lg:mt-[-380px]">
+        <div className="lg:w-full mx-auto px-8 lg:px-18 mt-[-230px] lg:mt-[-380px]" data-aos="zoom-in">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={30}
@@ -221,7 +221,7 @@ const HomeMid = ({}) => {
           </Swiper>
         </div>
         <div className="mt-10 text-center">
-          <h1 className="mb-6 text-xl Heading-text">
+          <h1 className="mb-6 text-xl px-6 CGTISpacial text-[blue-700] lg:text-black">
             We have all the courses to help you improve your career.
           </h1>
           <button className="border-1 rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white Nav-text tracking-[1px]">

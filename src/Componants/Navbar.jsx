@@ -108,7 +108,7 @@ const Navbar = () => {
           <img src={CGTIlogo} alt="CGTI Logo" className="lg:w-98" />
         </div>
 
-        <div className="space-x-15 lg:ml-19 tracking-[2px]">
+        <div className="space-x-15 lg:ml-19 tracking-[0.8px]">
           <Link to="/" className="hover:text-blue-500 hover:underline">
             Home
           </Link>

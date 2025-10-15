@@ -77,7 +77,7 @@ const Team = () => {
       <section className="bg-[#F8FAFC] py-8">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="lg:text-5xl text-4xl font-extrabold text-gray-800 mb-10 text-center Heading-text">
-            Our Expert <span className="text-[#155DFC] underline">Team Member</span> Will Help to Progress
+            Our Expert <span className="text-[#155DFC] underline text-5xl CGTISpacial">Team Member</span> Will Help to Progress
           </h1>
           <p className="mb-10 text-center max-w-3xl mx-auto Body-text">
             Our team is here to provide the support and expertise you need. With
@@ -92,7 +92,7 @@ const Team = () => {
               <div
                 key={member.id}
                 className="bg-white shadow-lg rounded-2xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
-              >
+              data-aos="zoom-in">
                 <div className="relative overflow-hidden">
                   <img
                     src={member.img}
@@ -118,7 +118,7 @@ const Team = () => {
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800 ">{member.name}</h3>
-                  <p className="text-sm text-gray-500">{member.position}</p>
+                  <p className="text-1xl text-gray-500 CGTISpacial">{member.position}</p>
                 </div>
               </div>
             ))}
@@ -130,7 +130,7 @@ const Team = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-10 Heading-text">
-            Featured Courses for your <span className="text-[#155DFC] underline">Success</span>
+            Featured Courses for your <span className="text-[#155DFC] underline CGTISpacial">Success</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {courses.map((course, index) => (

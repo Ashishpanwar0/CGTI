@@ -68,7 +68,7 @@ const Testimonials = () => {
     <section className="bg-[#F8FAFC] py-10">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-12">
-          What Our <span className="text-[#155DFC] underline">Students</span> Say
+          What Our <span className="text-[#155DFC] underline CGTISpacial text-5xl">Students</span> Say
         </h2>
         <Swiper
   slidesPerView={1}
@@ -87,7 +87,7 @@ const Testimonials = () => {
               <div
                 onClick={() => setSelected(t)}
                 className="bg-white rounded-2xl shadow-lg p-6 text-center cursor-pointer transition hover:-translate-y-2 hover:shadow-2xl"
-              >
+               data-aos="zoom-in">
                 <img
                   src={t.photo}
                   alt={t.name}

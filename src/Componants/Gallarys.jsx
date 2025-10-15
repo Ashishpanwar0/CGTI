@@ -45,21 +45,21 @@ const Gallery = () => {
   const currentPhotos = photos.slice(startIndex, startIndex + photosPerPage);
 
   return (
-    <section className="bg-[#F9FAFB] py-18">
+    <section className="bg-[#F9FAFB] py-18" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl tracking-[1px] text-center text-gray-800 mb-20 font-bold Heading-text">
-          Where Passion Meets <span className="text-[#005AAC] underline">Technology</span>
+          Where Passion Meets <span className="text-[#005AAC] underline CGTISpacial text-5xl">Technology</span>
           <br />
           <span className="Heading-text">
-            Explore Our <span className="text-[#005AAC] underline">Learning</span> Moments
+            Explore Our <span className="text-[#005AAC] underline CGTISpacial text-5xl">Learning</span> Moments
           </span>
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
           {currentPhotos.map((photo) => (
             <div
               key={photo.id}
-              className="relative cursor-pointer overflow-hidden rounded-xl shadow-lg w-full max-w-xs"
+              className="relative cursor-pointer overflow-hidden rounded-xl shadow-lg w-full max-w-"
               onClick={() => setSelected(photo)}>
               <img
                 src={photo.src}
