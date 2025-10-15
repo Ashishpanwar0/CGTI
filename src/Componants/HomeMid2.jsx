@@ -150,9 +150,9 @@ const HomeMid2 = () => {
             Here at CGTI Technology, we help people develop their skills through
             computer software related courses.
           </p>
-          <button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
+          <a href="/AboutUs"><button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
             Explore More
-          </button>
+          </button></a>
         </div>
         <div className="justify-center mb-8 lg:mb-0">
           <img

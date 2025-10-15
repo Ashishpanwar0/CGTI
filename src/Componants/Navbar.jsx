@@ -152,7 +152,10 @@ const Navbar = () => {
         </div>
 
         {menuOpen && (
-          <div className="space-y-3 mt-4 ml-2">
+          <div className="space-y-3 mt-4 ml-2" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
             <Link to="/" className="block hover:text-blue-500">
               Home
             </Link>

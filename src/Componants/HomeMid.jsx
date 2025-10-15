@@ -221,12 +221,14 @@ const HomeMid = ({}) => {
           </Swiper>
         </div>
         <div className="mt-10 text-center">
-          <h1 className="mb-6 text-xl px-6 CGTISpacial text-[blue-700] lg:text-black">
+          <h1 className="mb-6 text-xl lg:text-5xl px-6 CGTISpacial text-[blue-700] lg:text-black">
             We have all the courses to help you improve your career.
           </h1>
-          <button className="border-1 rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white Nav-text tracking-[1px]">
+          <a href="/Courses">
+            <button className="border-1 rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white Nav-text tracking-[1px]">
             Explore More
           </button>
+          </a>
         </div>
       </section>
     </section>

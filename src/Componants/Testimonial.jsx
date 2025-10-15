@@ -107,8 +107,8 @@ const Testimonials = () => {
         </Swiper>
 
         {/* Social Media Embed Section */}
-        <div className="lg:flex space-y-10 mt-19">
-          <div className="w-full">
+        <div className="lg:flex space-y-10 mt-19 gap-x-2">
+          <div className="w-full p-5 lg:pl-15 lg:h-150" >
             <div className="w-full">
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputergurutraininginstitute&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
@@ -124,10 +124,10 @@ const Testimonials = () => {
           </div>
 
           {/* Instagram Embed */}
-          <div className="w-full">
+          <div className="w-full p-5">
             <iframe
               src="https://www.instagram.com/cgtirishikesh/embed"
-              lg:width="90%"
+              lg:width="88%"
               width="100%"
               height="500"
               frameBorder="0"

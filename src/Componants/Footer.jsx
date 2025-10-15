@@ -89,7 +89,7 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faPhone}
                 className="text-blue-400 mt-1"
-              />
+               size="xl"/>
               <div>
                 <p>+91-7500679066</p>
                 <p>+91-7455857367</p>
@@ -99,7 +99,7 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="text-blue-400 mt-1"
-              />
+               size="xl"/>
               <div>
                 <p>support@computerguru.co.in</p>
                 <p>cgtirishikesh@gmail.com</p>
@@ -109,7 +109,7 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faLocationDot}
                 className="text-blue-400 mt-1"
-              />
+               size="xl"/>
               <p>Rishikesh, Uttarakhand, India</p>
             </li>
           </ul>

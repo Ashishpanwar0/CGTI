@@ -78,76 +78,92 @@ function ContactUs() {
         </p>
         <div className="grid lg:grid-cols-2 gap-12">
           {/* ======= Left Side ======= */}
-          <div className="space-y-10">
-            <div className="flex gap-x-6">
-              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md">
+          <div className="space-y-8 sm:space-y-10">
+            {/* Main Branch */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-x-6">
+              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md flex justify-center items-center mx-auto sm:mx-0">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="text-4xl mt-1"
+                  className="text-3xl sm:text-4xl"
                 />
               </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
+              <div className="text-center sm:text-left">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 Heading-text">
                   Main Branch: IDPL (Rishikesh)
                 </h2>
-                <p className="text-gray-600 Body-text">
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
                   Gali No. 15, Geeta Nagar, IDPL, Virbhadra, Rishikesh,
                   Dehradun, Uttarakhand - 249202
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-x-6">
-              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md">
+            {/* Branch 2 */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-x-6">
+              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md flex justify-center items-center mx-auto sm:mx-0">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="text-4xl mt-1"
+                  className="text-3xl sm:text-4xl"
                 />
               </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
+              <div className="text-center sm:text-left">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 Heading-text">
                   Branch-2: Shyampur (Rishikesh)
                 </h2>
-                <p className="text-gray-600 Body-text">
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
                   Guljar Farm, Gali No.22, Hatt Road Shyampur, Rishikesh, Dist.-
                   Dehradun, Uttarakhand-249204
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-x-6">
-              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md">
-                <FontAwesomeIcon icon={faEnvelope} className="text-4xl mt-1" />
+            {/* Mail Us */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-x-6">
+              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md flex justify-center items-center mx-auto sm:mx-0">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="text-3xl sm:text-4xl"
+                />
               </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
+              <div className="text-center sm:text-left">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 Heading-text">
                   Mail Us
                 </h2>
-                <p className="text-gray-600 Body-text">
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
                   support@computerguru.co.in
                 </p>
-                <p className="text-gray-600 Body-text">
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
                   cgtirishikesh@gmail.com
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-x-6">
-              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md">
-                <FontAwesomeIcon icon={faPhone} className="text-4xl mt-1" />
+            {/* Call Us */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-x-6">
+              <div className="bg-blue-700 text-white p-4 rounded-full shadow-md flex justify-center items-center mx-auto sm:mx-0">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="text-3xl sm:text-4xl"
+                />
               </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 Heading-text">
+              <div className="text-center sm:text-left">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 Heading-text">
                   Call Us
                 </h2>
-                <p className="text-gray-600 Body-text">+91 8077545036</p>
-                <p className="text-gray-600 Body-text">+91 7060032534</p>
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
+                  +91 8077545036
+                </p>
+                <p className="text-gray-600 Body-text text-sm sm:text-base">
+                  +91 7060032534
+                </p>
               </div>
             </div>
           </div>
-
           {/* ======= Right Side: Contact Form ======= */}
-          <div className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300" data-aos="zoom-in">
+          <div
+            className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+            data-aos="zoom-in"
+          >
             <h2 className="text-3xl font-semibold mb-6 text-gray-800 Heading-text">
               Send Us a Message
             </h2>
@@ -203,7 +219,6 @@ function ContactUs() {
       <br />
       <br />
       <Footer />
-      <Homesidebar />
     </>
   );
 }
