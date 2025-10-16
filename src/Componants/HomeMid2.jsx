@@ -149,7 +149,7 @@ const HomeMid2 = () => {
             Here at CGTI Technology, we help people develop their skills through
             computer software related courses.
           </p>
-          <a href="/AboutUs"><button className="border tracking-[1px] Nav-text rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white">
+          <a href="/AboutUs"><button className="border Nav-text rounded-xl px-6 py-3 bg-[#F6CE22] hover:bg-[#f6cf22e3] text-black border-white">
             Explore More
           </button></a>
         </div>
@@ -255,7 +255,7 @@ const HomeMid2 = () => {
 
             <button
               type="submit"
-              className="border Nav-text tracking-[1px] rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white"
+              className="border Nav-text rounded-xl px-6 py-3 bg-[#F6CE22] hover:bg-[#f6cf22e3] text-black border-white"
             >
               Book Demo
             </button>

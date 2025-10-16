@@ -155,7 +155,7 @@ const HomeMid = ({}) => {
               that they are ready to face future challenges and grab better
               opportunities in both education and employment.
             </p>
-            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text bg-[#00BBEE] hover:bg-[#00DCAE] text-black border-white">
+            <button className="border-1 rounded-xl px-6 py-3 Nav-text bg-[#F6CE22] hover:bg-[#f6cf22e3] text-black border-white">
               Explore More
             </button>
           </div>
@@ -224,7 +224,7 @@ const HomeMid = ({}) => {
             We have all the courses to help you improve your career.
           </h1>
           <a href="/Courses">
-            <button className="border-1 rounded-xl px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white Nav-text tracking-[1px]">
+            <button className="border-1 rounded-xl px-6 py-3 bg-[#F6CE22] hover:bg-[#f6cf22e3] text-black border-white Nav-text">
             Explore More
           </button>
           </a>
