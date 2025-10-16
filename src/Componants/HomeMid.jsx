@@ -155,7 +155,7 @@ const HomeMid = ({}) => {
               that they are ready to face future challenges and grab better
               opportunities in both education and employment.
             </p>
-            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text bg-blue-700 hover:bg-blue-800 text-white">
+            <button className="border-1 rounded-xl px-6 py-3 tracking-[1px] Nav-text bg-[#00BBEE] hover:bg-[#00DCAE] text-black border-white">
               Explore More
             </button>
           </div>

@@ -13,6 +13,7 @@ import CGTIInsta from "../assets/CGTIInstragram.gif";
 import CGTILink from "../assets/CGTILink.gif.gif";
 import CGTITwitter from "../assets/CGTITwitter.gif";
 import Dotee from "../assets/dots.png";
+import Mobiledotee from "../assets/MobileDote.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -134,8 +135,14 @@ const Navbar = () => {
       <div className="px-4 py-2 lg:shadow-none shadow-2xl z-30 relative">
         <div className="flex items-center justify-between">
           
-          <div className="lg:hidden">
-            <img src={CGTIlogo} alt="" className="w-80" />
+          <div className="lg:hidden flex gap-x-2">
+            <img src={CGTIlogo} alt="" className="w-72" />
+            <img
+            src={Mobiledotee}
+            alt="CGTIHome"
+            className="w-6 h-6 cursor-pointer mt-4"
+            onClick={() => setSidebarOpen(true)}
+          />
           </div>
           <div>
             <button
