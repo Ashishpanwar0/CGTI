@@ -47,11 +47,11 @@ const Gallery = () => {
   return (
     <section className="bg-[#F9FAFB] py-18" data-aos="zoom-in">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl tracking-[1px] text-center text-gray-800 mb-20 font-bold Heading-text">
-          Where Passion Meets <span className="text-[#005AAC] underline CGTISpacial text-5xl">Technology</span>
-          <br />
+        <h2 className="lg:text-5xl text-3xl text-center text-gray-800 mb-20 font-bold Heading-text">
+          Where Passion Meets <span className="underline decoration-blue-500">Technology</span>
+          <br className="hidden lg:block"/>
           <span className="Heading-text">
-            Explore Our <span className="text-[#005AAC] underline CGTISpacial text-5xl">Learning</span> Moments
+            Explore Our <span className="underline decoration-blue-500">Learning</span> Moments
           </span>
         </h2>
 

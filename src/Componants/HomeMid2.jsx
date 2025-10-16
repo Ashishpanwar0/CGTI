@@ -79,13 +79,12 @@ const HomeMid2 = () => {
             className="w-full max-w-md lg:max-w-full rounded-xl lg:mt-4"
           />
         </div>
-        <div className="space-y-6 text-justify lg:tracking-[1px]" data-aos="zoom-in">
-          <span className="lg:text-5xl text-4xl font-bold Heading-text sm:text-center">
+        <div className="space-y-6 text-justify" data-aos="zoom-in">
+          <span className="lg:text-5xl text-3xl font-bold Heading-text sm:text-center">
             What we promise for the
-          </span>
-          <br />
-          <span className="lg:text-5xl text-4xl font-bold Heading-text">
-            bright future of the <span className="text-[#155DFC] underline CGTISpacial text-6xl font-bold">student</span>
+          </span><br className="lg:block hidden"/>
+          <span className="lg:text-5xl text-3xl font-bold Heading-text lg:ml-0 ml-1">
+            bright future of the {""} <span className="underline decoration-blue-500 font-bold">student</span>
           </span>
           <p className="mt-5 mb-10 lg:w-[88%] Body-text">
             we are always supportive of empowering our students with the
@@ -137,8 +136,8 @@ const HomeMid2 = () => {
       {/* Second Section Start */}
       <div className="grid lg:grid-cols-2 w-full px-6 mt-10 lg:tracking-[1px]">
         <div className="space-y-6 text-justify lg:mt-20 lg:ml-10" data-aos="zoom-in">
-          <span className="lg:text-5xl text-4xl font-bold Heading-text">
-            What <span className="text-[#155DFC] underline CGTISpacial text-5xl">We</span> do ?
+          <span className="lg:text-5xl text-3xl font-bold Heading-text">
+            What <span className="underline decoration-blue-500">We</span> do ?
           </span>
           <p className="mt-5 mb-10 lg:w-[88%] Body-text">
             We believe that our growth as a training institute goes hand in hand
@@ -167,7 +166,7 @@ const HomeMid2 = () => {
       <div className="grid lg:grid-cols-2 gap-x-10">
         {/* Right Side  start */}
         <div className="px-5 lg:ml-12 lg:mt-10 Body-text">
-          <h1 className="text-5xl font-bold mb-5 Heading-text">Develop Your <span className="text-[#155DFC] underline CGTISpacial text-6xl">Career</span></h1>
+          <h1 className="lg:text-5xl font-bold mb-5 Heading-text text-3xl">Develop Your <span className="decoration-blue-500 underline">Career</span></h1>
           <p className="mb-5 w-[90%] Body-text">
             Have you passed class 12th or graduation? Or you want to make your
             bright future in the field of computer.
@@ -198,8 +197,8 @@ const HomeMid2 = () => {
         </div>
         {/* left side start */}
         <div className="lg:w-[90%] shadow-xl px-8 py-8 lg:mt-[-20px] relative z-20 rounded-sm hover:shadow-2xl">
-          <h1 className="Heading-text text-5xl font-bold pt-6 mb-5">
-            Book <span className="text-[#155DFC] underline CGTISpacial text-6xl">Free</span> Demo Class
+          <h1 className="Heading-text lg:text-5xl text-3xl font-bold pt-3 mb-5">
+            Book <span className="underline decoration-blue-500">Free</span> Demo Class
           </h1>
           <p className="mb-5 Body-text">
             Thank you for reaching out to UtechSoftware! Please fill the form

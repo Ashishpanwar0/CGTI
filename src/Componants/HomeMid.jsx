@@ -122,9 +122,8 @@ const HomeMid = ({}) => {
             >
               About
             </span> */}
-            <h1 className="lg:text-[45px] text-3xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 Heading-text tracking-[1px]">
-              Computer Guru Training{" "}
-              <span className="underline decoration-blue-500 text-[#155DFC] CGTISpacial text-5xl">Institute</span> -
+            <h1 className="lg:text-[45px] text-2xl font-bold mb-5 text-[#1F2531] transform-1d lg:mt-0 mt-8 Heading-text tracking-[1px]">
+              Computer Guru Training{" "}<span className="underline decoration-blue-500">Institute</span> -
               Rishikesh
             </h1>
             <p className="text-1xl mb-5 text-justify Body-text lg:w-[90%] text-[#c3c8c7] ">
@@ -164,7 +163,7 @@ const HomeMid = ({}) => {
 
         <div>
           <h1
-            className="lg:text-[150px] text-5xl font-extrabold bg-clip-text text-transparent bg-center bg-cove lg:text-center lg:px-0 px-8 tracking-[1px] Heading-text"
+            className="lg:text-[150px] text-[40px] md:text-[60px] font-extrabold bg-clip-text text-transparent bg-center bg-cove lg:text-center lg:px-0 px-8 Heading-text"
             style={{ backgroundImage: `url(${TextBackGroundColoreImage})` }}
           >
             Lead the Future
@@ -175,7 +174,7 @@ const HomeMid = ({}) => {
       <section>
         <div className="lg:flex bg-[#F2F5FA] lg:h-140 h-120 justify-center lg:px-10 lg:pt-20 pt-10 px-8 space-y-5">
           <h1 className="lg:text-4xl font-extrabold lg:w-full text-3xl Heading-text">
-            <span className="underline decoration-blue-500 text-[#155DFC] Heading-text">Courses</span>{" "}
+            <span className="underline decoration-blue-500 Heading-text">Courses</span>{" "}
             tailored to your needs
           </h1>
           <p className="lg:w-2/2 Body-text">
@@ -220,8 +219,8 @@ const HomeMid = ({}) => {
             ))}
           </Swiper>
         </div>
-        <div className="mt-10 text-center">
-          <h1 className="mb-6 text-xl lg:text-5xl px-6 CGTISpacial text-[blue-700] lg:text-black">
+        <div className="mt-5 text-center">
+          <h1 className="mb-6 text-xl lg:text-5xl px-6 text-[blue-700] lg:text-black">
             We have all the courses to help you improve your career.
           </h1>
           <a href="/Courses">

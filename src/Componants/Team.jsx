@@ -76,10 +76,10 @@ const Team = () => {
       {/* Team Section */}
       <section className="bg-[#F8FAFC] py-8">
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="lg:text-5xl text-4xl font-extrabold text-gray-800 mb-10 text-center Heading-text">
-            Our Expert <span className="text-[#155DFC] underline text-5xl CGTISpacial">Team Member</span> Will Help to Progress
+          <h1 className="lg:text-5xl text-3xl font-extrabold text-gray-800 mb-10 text-center Heading-text">
+            Our Expert <span className="underline decoration-blue-500">Team Member</span> Will Help to Progress
           </h1>
-          <p className="mb-10 text-center max-w-3xl mx-auto Body-text">
+          <p className="mb-10 max-w-3xl mx-auto Body-text text-justify lg:text-center">
             Our team is here to provide the support and expertise you need. With
             their unwavering commitment to your growth, you can confidently stride
             forward on your educational and career path, knowing that you have a
@@ -129,8 +129,8 @@ const Team = () => {
       {/* Featured Courses Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-10 Heading-text">
-            Featured Courses for your <span className="text-[#155DFC] underline CGTISpacial">Success</span>
+          <h2 className="lg:text-5xl text-3xl font-extrabold text-center text-gray-800 mb-10 Heading-text">
+            Featured Courses for your <span className="underline decoration-blue-500">Success</span>
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {courses.map((course, index) => (

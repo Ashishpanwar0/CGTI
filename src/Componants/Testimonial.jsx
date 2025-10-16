@@ -67,8 +67,8 @@ const Testimonials = () => {
   return (
     <section className="bg-[#F8FAFC] py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-12">
-          What Our <span className="text-[#155DFC] underline CGTISpacial text-5xl">Students</span> Say
+        <h2 className="lg:text-5xl text-3xl font-extrabold text-center text-gray-800 mb-12">
+          What Our <span className="underline decoration-blue-500">Students</span> Say
         </h2>
         <Swiper
   slidesPerView={1}

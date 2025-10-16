@@ -70,7 +70,7 @@ function ContactUs() {
       {/* ======= Contact Info Section ======= */}
       <section className="bg-[#F2F5FA] py-16 px-6 lg:px-20 shadow-4xl lg:w-[90%] mx-auto rounded-2xl -mt-15 relative z-10">
         <h1 className="text-5xl font-extrabold tracking-[1px] mb-6 text-gray-800 Heading-text">
-          Get in <span className="text-blue-600 underline">Touch</span>
+          Get in <span className="decoration-blue-500 underline">Touch</span>
         </h1>
         <p className="text-gray-600 mb-12 lg:w-[80%] Body-text">
           Have any doubts? Want to speak to us? Just reach out and we will get
