@@ -99,7 +99,7 @@ const FeaturesData = [
   {
     id: 16,
     title: "Award Winning Education Center",
-    icon: <FontAwesomeIcon icon={faTrophy} style={{ fontSize: "50px", color: "#005EAA" }} />,
+    icon: <FontAwesomeIcon icon={faTrophy} style={{ fontSize: "50px", color: "" }} />,
   },
 ];
 
