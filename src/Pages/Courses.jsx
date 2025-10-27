@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import Navbar from "../Componants/Navbar";
 import Footer from "../Componants/Footer";
 import SecondHeader from "../Componants/SecondHeader";
@@ -14,17 +15,13 @@ import img7 from "../Coursesgallery/Courses-7.png";
 import img8 from "../Coursesgallery/Courses-8.png";
 import img9 from "../Coursesgallery/Courses-9.jpg";
 
-
-
-
-
 const CourseSection = [
   {
     id: 1,
     src: img1, alt: "Course1",
     title: "Advance Diploma in Computer Application (ADCA)"
   },
-  {
+  { 
     id: 2,
     src: img2, alt: "Course2",
     title: "Advance Diploma in Computer Application & Programming (ADCAP)"
@@ -73,6 +70,7 @@ function Courses() {
       <SecondHeader bgImage={CGTICourses} title="Courses " subtitle="Home . Courses" />
      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:px-10 py-20 p-5">
         {CourseSection.map((course) => (
+         <Link to={`/course/${course.id}`} key={course.id}>
           <div key={course.id} className="text-center shadow-lg rounded-lg p-4 hover:shadow-xl transition" data-aos="zoom-in">
             <img
               src={course.src}
@@ -83,6 +81,7 @@ function Courses() {
               {course.title}
             </h1>
           </div>
+         </Link>
         ))}
       </section>
       <Footer/>

@@ -8,6 +8,7 @@ import ContactUs from "./Pages/ContactUs";
 import PhotoGallery from "./Pages/PhotoGallery";
 import Courses from "./Pages/Courses";
 import AboutUs from "./Pages/AboutUs";
+import CoursesDetails from "./Componants/CoursesDetails";
 function App() {
    useEffect(() => {
     AOS.init({
@@ -40,6 +41,10 @@ function App() {
           path: "AboutUs",
           element: <AboutUs />,
         },
+        {
+          path: "/course/:id",
+          element: <CoursesDetails/>
+        }
       ],
     },
   ]);
