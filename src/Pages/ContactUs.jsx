@@ -36,7 +36,7 @@ function ContactUs() {
 
       const data = await res.json();
       if (data.success) {
-        setStatus("Message sent successfully!");
+        setStatus("Message sent successfully");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         setStatus("Failed to send message. Try again.");

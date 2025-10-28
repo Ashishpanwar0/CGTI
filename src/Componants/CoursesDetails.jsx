@@ -73,7 +73,6 @@ function CourseDetails() {
             </ul>
           }
         />
-
         {/* Back button (optional) */}
         {/* <div className="text-center mt-10">
           <Link
