@@ -106,7 +106,7 @@ const FeaturesData = [
 const Features = () => {
   return (
     <section className="bg-[#F2F5FA] py-12">
-      <div className="max-w-7xl mx-auto px-6" data-aos="zoom-in">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <h1 className="lg:text-5xl text-3xl font-bold text-center mb-10 Heading-text">
           Features & <span className="underline decoration-blue-500">Facilities</span>
@@ -117,7 +117,7 @@ const Features = () => {
           {FeaturesData.map((item) => (
             <div
               key={item.id}
-              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300"
+              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300" data-aos="zoom-in"
             >
               <div className="mb-4 Heading-text">{item.icon}</div>
               <h2 className="text-lg font-semibold Body-text">{item.title}</h2>

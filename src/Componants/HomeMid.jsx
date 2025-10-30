@@ -110,10 +110,10 @@ const HomeMid = ({}) => {
     <section className="bg-[#F8FAFC] py-8">
       <section className="pt-8 py-6 ">
         {/* first Section Start */}
-        <div className="grid lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-18 lg:px-5 px-2 mb-8" data-aos="fade-up"
+           data-aos-anchor-placement="center-bottom">
           <div className="md:px-6"> 
-            <img src={CGTIHomeMid} alt="" className="lg:w-[100%] md:w-[100%]" />
+            <img src={CGTIHomeMid} alt="CGTI" className="lg:w-[100%] md:w-[100%]" />
           </div>
           <div className="px-6 lg:px-0">
             {/* <span
