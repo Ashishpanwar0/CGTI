@@ -2,10 +2,10 @@
   import img2 from "../Coursesgallery/Courses-2.png";
   import img3 from "../Coursesgallery/Courses-3.jpg";
   import img4 from "../Coursesgallery/Courses-4.png";
-  import img5 from "../Coursesgallery/Courses-5.jpg";
-  import img6 from "../Coursesgallery/Courses-6.png";
-  import img7 from "../Coursesgallery/Courses-7.png";
-  import img8 from "../Coursesgallery/Courses-8.png";
+  import img8 from "../Coursesgallery/Courses-5.jpg";
+  import img5 from "../Coursesgallery/Courses-6.png";
+  import img6 from "../Coursesgallery/Courses-7.png";
+  import img7 from "../Coursesgallery/Courses-8.png";
   import img9 from "../Coursesgallery/Courses-9.jpg";
 
   const courseData = [
@@ -112,7 +112,7 @@
   },
   {
     id: 5,
-    bgImage: img5,
+    bgImage: img8,
     title: "Diploma In Financial Accounting (DFA)",
     desc: "The Diploma in Financial Accounting (DFA) is a professional course designed for students and working professionals who want to build expertise in accounting, taxation, and financial management with the latest software tools. Offered by Computer Guru Training Institute, this course provides practical knowledge of Tally, GST, TDS, income tax, payroll, and business accounting, along with basic computer skills to manage financial records effectively. It prepares learners for careers in finance, banking, corporate offices, and accounting firms.",
     semester1: [
@@ -137,7 +137,7 @@
   },
   {
     id: 6,
-    bgImage: img6,
+    bgImage: img5,
     title: "Certificate in Computer Application (CCA)",
     desc: "The Certificate in Computer Application (CCA) offered by Computer Guru Training Institute (CGTI) is a comprehensive short-term course designed to provide students and beginners with essential computer skills for professional success. The program covers basic computer fundamentals, MS Office applications (Word, Excel, PowerPoint, Access, Outlook), typing skills in English and Hindi, internet usage, and practical projects, giving learners hands-on experience to efficiently manage office tasks. By completing CCA, students become job-ready for roles like data entry, office administration, IT support, and clerical positions, while gaining the confidence to work with modern digital tools in any professional environment.",
     semester1: [
@@ -156,24 +156,61 @@
   },
   {
     id: 7,
-    bgImage: img3,
-    title: "",
-    desc: "",
+    bgImage: img6,
+    title: "Computer Teacher Training Course (CTTC)",
+    desc: "The Computer Teacher Training Course (CTTC) offered by Computer Guru Training Institute (CGTI) is a comprehensive professional program designed to train individuals to become skilled and confident computer instructors. The course covers computer fundamentals, advanced MS Office, programming languages (C, C++, Java, Python, C#, .NET), internet and Google tools, and web designing (HTML, CSS, JavaScript, Bootstrap, WordPress). With a combination of theory, practical lab sessions, and teaching methodology, trainees gain the knowledge and hands-on experience needed to teach computer subjects effectively in schools, coaching centers, or online platforms.",
     semester1: [
-      "Fundamentals of Computer",
-      "MS Office (Word, Excel, PowerPoint)",
-      "Internet & Email",
-      "Operating System (Windows/Linux)",
-      "Typing Practice",
+      "Computer Fundamentals: Basics of computers, hardware, software, and operating systems.",
+      "MS-Office (Advanced): Advanced Word, Excel, and PowerPoint features for professional use.",
+      "Internet: Global network for communication, information, and services.",
+      "Google (Docs, Sheets, Slides): Cloud-based tools for creating documents, spreadsheets, and presentations.",
+      "Web Designing (HTML, CSS, JavaScript, Bootstrap, WordPress): Creating responsive and interactive websites using coding and CMS tools.",
     ],
     semester2: [
-      "Tally with GST",
-      "HTML & Web Basics",
-      "C Programming",
-      "Database (MS Access)",
-      "Project Work",
+      "Tally – Company setup, entries, ledgers, and inventory etc.",
+      "C Programming: Basic procedural programming language for system-level development.",
+      "C++ Programming: Object-oriented extension of C for advanced programming and applications.",
+      "Java: Platform-independent, object-oriented language for web and application development.",
+      "Python: High-level, versatile language for scripting, data analysis, and web apps.",
     ],
   },
+  {
+    id: 8,
+    bgImage: img7,
+    title: "Certificate in Data Entry Operator",
+    desc: "The Certificate in Data Entry Operator (CDEO) offered by Computer Guru Training Institute (CGTI) is a short-term professional course designed to train students and beginners in efficient data entry, typing, and basic computer operations. The program focuses on computer fundamentals, Windows/DOS, MS Office (Word, Excel, Access), typing skills in English and Hindi, and practical data entry exercises, preparing learners for roles in data entry, office administration, IT support, and clerical work.",
+    semester1: [
+      "Typing (English/Hindi) – Develop speed and accuracy in both English and Hindi typing.",
+      "Windows Accessories – Use essential tools like Paint, Notepad, and WordPad effectively.",
+      "Windows / DOS – Learn basic operating system navigation and file management.",
+      "Internet – Browse, search, and use online tools for communication and information.",
+    ],
+    semester2: [
+      "MS Word – Create, format, and edit professional documents.",
+      "MS Excel – Manage data with formulas, charts, and pivot tables.",
+      "MS PowerPoint – Design engaging presentations with slides and animations.",
+      "Outlook / Email – Send, receive, and manage emails efficiently.",
+      "Print & Scanning – Operate printers and scanners for document management.",
+      "Computer Lab Practical – Hands-on practice with all MS Office tools.",
+    ],
+  },
+{
+    id: 9,
+    bgImage: img9,
+    title: "Typing-Hindi/English",
+    desc: "Typing (Hindi/English) is a fundamental skill course designed to help learners improve typing speed, accuracy, and efficiency in both English and Hindi. It covers practical exercises, keyboard techniques, and professional typing practices, preparing students for data entry, office work, and digital documentation tasks in any professional environment.",
+    semester1: [
+      "Tricks and Tips: Helpful shortcuts and methods to type faster.",
+      "Fundamental of Keyboard: Basic keys and their functions.",
+      "Function of Keyboard: Understanding how each key works.",
+      
+    ],
+    semester2: [
+      "Typing Speed through Software: Improving speed using typing software.",
+      "Typing Test: Evaluating typing speed and accuracy.",
+    ],
+  },
+
 
   ]; 
 
