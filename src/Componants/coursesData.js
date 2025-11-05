@@ -2,10 +2,10 @@
   import img2 from "../Coursesgallery/Courses-2.png";
   import img3 from "../Coursesgallery/Courses-3.jpg";
   import img4 from "../Coursesgallery/Courses-4.png";
-  import img8 from "../Coursesgallery/Courses-5.jpg";
-  import img5 from "../Coursesgallery/Courses-6.png";
-  import img6 from "../Coursesgallery/Courses-7.png";
-  import img7 from "../Coursesgallery/Courses-8.png";
+  import img5 from "../Coursesgallery/Courses-5.jpg";
+  import img6 from "../Coursesgallery/Courses-6.png";
+  import img7 from "../Coursesgallery/Courses-7.png";
+  import img8 from "../Coursesgallery/Courses-8.png";
   import img9 from "../Coursesgallery/Courses-9.jpg";
 
   const courseData = [
@@ -112,7 +112,7 @@
   },
   {
     id: 5,
-    bgImage: img8,
+    bgImage: img5,
     title: "Diploma In Financial Accounting (DFA)",
     desc: "The Diploma in Financial Accounting (DFA) is a professional course designed for students and working professionals who want to build expertise in accounting, taxation, and financial management with the latest software tools. Offered by Computer Guru Training Institute, this course provides practical knowledge of Tally, GST, TDS, income tax, payroll, and business accounting, along with basic computer skills to manage financial records effectively. It prepares learners for careers in finance, banking, corporate offices, and accounting firms.",
     semester1: [
@@ -137,7 +137,7 @@
   },
   {
     id: 6,
-    bgImage: img5,
+    bgImage: img6,
     title: "Certificate in Computer Application (CCA)",
     desc: "The Certificate in Computer Application (CCA) offered by Computer Guru Training Institute (CGTI) is a comprehensive short-term course designed to provide students and beginners with essential computer skills for professional success. The program covers basic computer fundamentals, MS Office applications (Word, Excel, PowerPoint, Access, Outlook), typing skills in English and Hindi, internet usage, and practical projects, giving learners hands-on experience to efficiently manage office tasks. By completing CCA, students become job-ready for roles like data entry, office administration, IT support, and clerical positions, while gaining the confidence to work with modern digital tools in any professional environment.",
     semester1: [
@@ -156,7 +156,7 @@
   },
   {
     id: 7,
-    bgImage: img6,
+    bgImage: img7,
     title: "Computer Teacher Training Course (CTTC)",
     desc: "The Computer Teacher Training Course (CTTC) offered by Computer Guru Training Institute (CGTI) is a comprehensive professional program designed to train individuals to become skilled and confident computer instructors. The course covers computer fundamentals, advanced MS Office, programming languages (C, C++, Java, Python, C#, .NET), internet and Google tools, and web designing (HTML, CSS, JavaScript, Bootstrap, WordPress). With a combination of theory, practical lab sessions, and teaching methodology, trainees gain the knowledge and hands-on experience needed to teach computer subjects effectively in schools, coaching centers, or online platforms.",
     semester1: [
@@ -176,7 +176,7 @@
   },
   {
     id: 8,
-    bgImage: img7,
+    bgImage: img8,
     title: "Certificate in Data Entry Operator",
     desc: "The Certificate in Data Entry Operator (CDEO) offered by Computer Guru Training Institute (CGTI) is a short-term professional course designed to train students and beginners in efficient data entry, typing, and basic computer operations. The program focuses on computer fundamentals, Windows/DOS, MS Office (Word, Excel, Access), typing skills in English and Hindi, and practical data entry exercises, preparing learners for roles in data entry, office administration, IT support, and clerical work.",
     semester1: [
