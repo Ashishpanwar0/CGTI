@@ -14,6 +14,22 @@ import img12 from "../Gallery/CGTIGallery12.jpeg";
 import img13 from "../Gallery/CGTIGallery13.jpeg";
 import img14 from "../Gallery/CGTIGallery14.jpeg";
 import img15 from "../Gallery/CGTIGallery15.jpeg";
+import img16 from "../Gallery/CGTIGallery16.jpeg";
+import img17 from "../Gallery/CGTIGallery17.jpeg";
+import img18 from "../Gallery/CGTIGallery18.jpeg";
+import img19 from "../Gallery/CGTIGallery19.jpeg";
+import img20 from "../Gallery/CGTIGallery20.jpeg";
+import img21 from "../Gallery/CGTIGallery21.jpeg";
+import img22 from "../Gallery/CGTIGallery22.jpeg";
+import img23 from "../Gallery/CGTIGallery23.jpeg";
+import img24 from "../Gallery/CGTIGallery24.jpeg";
+import img25 from "../Gallery/CGTIGallery25.jpeg";
+import img26 from "../Gallery/CGTIGallery26.jpeg";
+import img27 from "../Gallery/CGTIGallery27.jpeg";
+import img28 from "../Gallery/CGTIGallery28.jpeg";
+import img29 from "../Gallery/CGTIGallery29.jpeg";
+import img30 from "../Gallery/CGTIGallery30.jpeg";
+
 
 const photos = [
   { id: 1, src: img1, alt: "Gallery 1" },
@@ -31,6 +47,22 @@ const photos = [
   { id: 13, src: img13, alt: "Gallery 2" },
   { id: 14, src: img14, alt: "Gallery 2" },
   { id: 15, src: img15, alt: "Gallery 2" },
+  { id: 16, src: img16, alt: "Gallery 3" },
+  { id: 17, src: img17, alt: "Gallery 3" },
+  { id: 18, src: img18, alt: "Gallery 3" },
+  { id: 19, src: img19, alt: "Gallery 3" },
+  { id: 20, src: img20, alt: "Gallery 3" },
+  { id: 21, src: img21, alt: "Gallery 4" },
+  { id: 22, src: img22, alt: "Gallery 4" },
+  { id: 23, src: img23, alt: "Gallery 4" },
+  { id: 24, src: img24, alt: "Gallery 4" },
+  { id: 25, src: img25, alt: "Gallery 4" },
+  { id: 26, src: img26, alt: "Gallery 5" },
+  { id: 27, src: img27, alt: "Gallery 5" },
+  { id: 28, src: img28, alt: "Gallery 5" },
+  { id: 29, src: img29, alt: "Gallery 5" },
+  { id: 30, src: img30, alt: "Gallery 5" },
+
 
 ];
 
