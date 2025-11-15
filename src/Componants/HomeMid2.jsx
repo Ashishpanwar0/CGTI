@@ -27,7 +27,7 @@ const AccordionItem = ({ title, content }) => {
 };
 
 const HomeMid2 = () => {
-   const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact: "",
@@ -35,6 +35,7 @@ const HomeMid2 = () => {
     education: "",
     message: "",
   });
+
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -43,15 +44,18 @@ const HomeMid2 = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      const res = await fetch("http://localhost:5000/demo", {
+      const res = await fetch("http://localhost/cgti_backend/demo.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
       const data = await res.json();
+
       if (data.success) {
-        setStatus("Demo booked successfully");
+        setStatus("Demo booked successfully!");
         setFormData({
           name: "",
           email: "",
